@@ -130,7 +130,7 @@
   
   <article class="article post card" itemscope="" itemtype="http://schema.org/Article">
     <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/03/hello-world/">
+      <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/03/Linix-git提交出现错误everything-up-to-date的解决方法/">
       <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
         <meta itemprop="name" content="C. Young">
         <meta itemprop="description" content="The day is Tody.">
@@ -142,12 +142,12 @@
     </div>
     <header class="post-header">
       <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/2019/01/03/hello-world/" itemprop="url">Hello World</a>
+        <a class="post-title-link post-title-link-external" href="/2019/01/03/Linix-git提交出现错误everything-up-to-date的解决方法/" itemprop="url">Linix git提交出现错误everything up to date的解决方法</a>
       </h1>
       <div class="post-meta">
         
         <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-01-03T20:25:05+08:00">2019-01-03 20:25:05</time></span>
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-01-03T20:32:18+08:00">2019-01-03 20:32:18</time></span>
         </span>
         
         
@@ -156,7 +156,7 @@
         
         <span class="post-categories">
           
-          <i class="far fa-folder-open"></i><span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/HelloWorld/" itemprop="url" rel="index"><span itemprop="name">HelloWorld</span></a></span>
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a></span><i class="fas fa-angle-right"></i><span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Linux/git/" itemprop="url" rel="index"><span itemprop="name">git</span></a></span>
         </span>
         
         
@@ -164,13 +164,86 @@
     </header>
     <main class="post-main" itemprop="articleBody">
       
-      <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+      <p>如果你之前没有提交过文件,而你在git push的时候出现Everything up-to-date,并且文件也没有提交上去.可能是因为你没有git add 和 git commit. </p>
+<pre><code>git add .
+git commit -m &quot;test&quot;
+// 不添加-m 是不能直接添加message的
+git pull origin  master
+git push origin master
+</code></pre>
       
     </main>
     <footer class="post-footer">
       
+      <div class="post-tags">
+        
+        <a class="post-tag button" href="/tags/linux/" rel="tag"><i class="fas fa-tags"></i>linux</a>
+        
+        <a class="post-tag button" href="/tags/错误解决/" rel="tag"><i class="fas fa-tags"></i>错误解决</a>
+        
+        <a class="post-tag button" href="/tags/错误/" rel="tag"><i class="fas fa-tags"></i>错误</a>
+        
+      </div>
+      
     </footer>
   </article>
+  
+  <article class="article post card" itemscope="" itemtype="http://schema.org/Article">
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/03/Linux-Ionic配置/">
+      <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <meta itemprop="name" content="C. Young">
+        <meta itemprop="description" content="The day is Tody.">
+        <meta itemprop="image" content="/images/myavatar.jpg">
+      </span>
+      <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+        <meta itemprop="name" content="CYoung">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link post-title-link-external" href="/2019/01/03/Linux-Ionic配置/" itemprop="url">Linux Ionic配置</a>
+      </h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-01-03T20:30:07+08:00">2019-01-03 20:30:07</time></span>
+        </span>
+        
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a></span><i class="fas fa-angle-right"></i><span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Linux/Ionic/" itemprop="url" rel="index"><span itemprop="name">Ionic</span></a></span>
+        </span>
+        
+        
+      </div>
+    </header>
+    <main class="post-main" itemprop="articleBody">
+      
+      <h2 id="查看系统版本"><a href="#查看系统版本" class="headerlink" title="查看系统版本"></a>查看系统版本</h2><pre><code>uname -a
+</code></pre><h2 id="查看系统位数"><a href="#查看系统位数" class="headerlink" title="查看系统位数"></a>查看系统位数</h2><pre><code>uname -m
+</code></pre><p>如果是x86_64就是64位，如果是i686就是32位</p>
+<h2 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h2><ol>
+<li>进入Nodejs官网下载安装包</li>
+<li>解压安装包<pr <="" main="">
+    <footer class="post-footer">
+      
+      <div class="post-tags">
+        
+        <a class="post-tag button" href="/tags/linux/" rel="tag"><i class="fas fa-tags"></i>linux</a>
+        
+        <a class="post-tag button" href="/tags/ionic/" rel="tag"><i class="fas fa-tags"></i>ionic</a>
+        
+        <a class="post-tag button" href="/tags/配置/" rel="tag"><i class="fas fa-tags"></i>配置</a>
+        
+      </div>
+      
+    </footer>
+  </pr></li></ol></main></article>
   
   <article class="article post card" itemscope="" itemtype="http://schema.org/Article">
     <div class="post-block">
@@ -215,10 +288,10 @@
 <p><strong>CSS3渐变优点</strong></p>
 <p>代替使用图像来实现效果，可以减少下载的时间和宽带的使用。</p>
 <p>由浏览器生成，在放大时看起来效果更好。</p>
-<h3 id="线性渐变"><a href="#线性渐变" class="headerlink" title="线性渐变"></a>线性渐变</h3><p>语法：<code>background: linear-gradient(direction,color-stop1,color-sto
+<h3 id="线性渐变"><a href="#线性渐变" class="headerlin
       
-    </code></p></main>
-    <footer class="post-footer">
+    </main>
+    <footer class=" post-footer"="">
       
       <div class="post-tags">
         
@@ -228,8 +301,8 @@
         
       </div>
       
-    </footer>
-  </article>
+    
+  </a></h3></main></article>
   
   <article class="article post card" itemscope="" itemtype="http://schema.org/Article">
     <div class="post-block">
@@ -275,11 +348,10 @@
 <li>background-clip</li>
 <li>使用多重背景图片</li>
 </ul>
-<h3 id="background-size"><a href="#background-size" class="headerlink" title="background-size"></a>background-size</h3><p>规定背景图片的尺寸</p>
-<p>语法： <code>background-size:length | percentage | cove
+<h3 id="background-size"><a href="#background-size" class="headerlink" title="background-si
       
-    </code></p></main>
-    <footer class="post-footer">
+    </main>
+    <footer class=" post-footer"="">
       
       <div class="post-tags">
         
@@ -289,8 +361,8 @@
         
       </div>
       
-    </footer>
-  </article>
+    
+  </a></h3></main></article>
   
   <article class="article post card" itemscope="" itemtype="http://schema.org/Article">
     <div class="post-block">
@@ -330,8 +402,9 @@
       
       <h1 id="CSS动画"><a href="#CSS动画" class="headerlink" title="CSS动画"></a>CSS动画</h1><p>[TOC]</p>
 <h2 id="过渡"><a href="#过渡" class="headerlink" title="过渡"></a>过渡</h2><h3 id="transition"><a href="#transition" class="headerlink" title="transition"></a><code>transition</code></h3><p>CSS3中<code>transform</code>属性所实现的元素变形，呈现的仅仅是一个结果。而<code>transition</code>实现的是一种过渡，即一种动画转换过程，如渐显，渐隐，动画快慢等。</p>
-<p><code>transition</code>通过将一个元素<strong>从一个属性值</strong>在指定的时间内平滑地过渡到<strong>另一个属性值</strong>来实现动画功能。</p>
-<h4 id="语法" <="" main="">
+<p><code>transit
+      
+    </code></p></main>
     <footer class="post-footer">
       
       <div class="post-tags">
@@ -343,7 +416,7 @@
       </div>
       
     </footer>
-  </h4></main></article>
+  </article>
   
   <article class="article post card" itemscope="" itemtype="http://schema.org/Article">
     <div class="post-block">
@@ -385,8 +458,7 @@
 <p>CSS用于控制网页的样式和布局</p>
 <p><strong>CSS3是最新的CSS标准</strong></p>
 <h2 id="CSS发展史"><a href="#CSS发展史" class="headerlink" title="CSS发展史"></a>CSS发展史</h2><h3 id="CSS1"><a href="#CSS1" class="headerlink" title="CSS1"></a>CSS1</h3><p>包含了<code>font</code>的相关属性，字体、颜色、补白、基本选择器</p>
-<h3 id="CSS2"><a href="#CSS2" class="headerlink" title="CSS2"></a>CSS2</h3><p>在这个版本中开始使用样式表结构。浮动和定位、高级选择器（子选择器，相邻选择器，通用选择器）</p>
-<h3 id="C
+<h3 id="CSS2"><a href="#CSS2" class="
       
     </main>
     <footer class=" post-footer"="">
@@ -398,7 +470,7 @@
       </div>
       
     
-  </h3></main></article>
+  </a></h3></main></article>
   
   <article class="article post card" itemscope="" itemtype="http://schema.org/Article">
     <div class="post-block">
@@ -438,8 +510,7 @@
       
       <h1 id="文本，字体与颜色"><a href="#文本，字体与颜色" class="headerlink" title="文本，字体与颜色"></a>文本，字体与颜色</h1><p>[TOC]</p>
 <h2 id="文本样式"><a href="#文本样式" class="headerlink" title="文本样式"></a>文本样式</h2><p>CSS3包含多个新的文字特性，包括文本阴影、自动换行、使用服务器端字体等。并且不需使用设计软件，比如PhotoShop。</p>
-<h3 id="给文本添加阴影——text-shadow属性"><a href="#给文本添加阴影——text-shadow属性" class="headerlink" title="给文本添加阴影——text-shadow属性"></a>给文本添加阴影——<strong>text-shadow</strong>属性</h3><p><strong>语法</strong> : <code>text-shadow:h-shadow v-shadow blur color</code></p>
-<table <="" main="">
+<h3 id="给文本添加阴影——text-shadow属性"><a href="#给文本添加阴影——text-shadow属性" class="headerlink" title="给文本添加阴影——text-shadow属性"></a>给文本添加阴影——<strong>text-shadow
     <footer class="post-footer">
       
       <div class="post-tags">
@@ -449,7 +520,7 @@
       </div>
       
     </footer>
-  </table></main></article>
+  </strong></h3></main></article>
   
   <article class="article post card" itemscope="" itemtype="http://schema.org/Article">
     <div class="post-block">
@@ -494,10 +565,10 @@
 <li>显式绑定</li>
 <li>new绑定</li>
 </ul>
-<h3 id="1-默认绑定"><a href="#1-默认绑定" class="headerlink" title="1. 默认绑定"></a>1. 默认绑定</h3><p>当一个函数没有明确的<strong>调用对象</strong>的时候，也就是单纯作为独立函数调用的时候，将对函数的<code>
+<h3 id="1-默认绑定"><a href="#1-默认绑定" class="headerlink
       
-    </code></p></main>
-    <footer class="post-footer">
+    </main>
+    <footer class=" post-footer"="">
       
       <div class="post-tags">
         
@@ -507,8 +578,8 @@
         
       </div>
       
-    </footer>
-  </article>
+    
+  </a></h3></main></article>
   
   
   
@@ -538,7 +609,7 @@
     
     <div class="archives-count">
       <div class="site-count-title">归档</div>
-      <div><a href="/archives/">7</a></div>
+      <div><a href="/archives/">8</a></div>
     </div>
     
     
@@ -547,7 +618,7 @@
     
     <div class="categories-count">
       <div class="site-count-title">分类</div>
-      <div><a href="/categories/">7</a></div>
+      <div><a href="/categories/">10</a></div>
     </div>
     
     
@@ -556,7 +627,7 @@
     
     <div class="tags-count">
       <div class="site-count-title">标签</div>
-      <div><a href="/tags/">9</a></div>
+      <div><a href="/tags/">11</a></div>
     </div>
     
   </div>

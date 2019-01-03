@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head><meta name="generator" content="Hexo 3.8.0">
@@ -84,7 +83,7 @@
     <script defer type="text/javascript" src="/js/index.js"></script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>标签 | CYoung</title>
+    <title>Linux Ionic配置 | CYoung</title>
   </head>
   <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh_CN" data-spy="scroll" data-target=".list-group">
     
@@ -126,23 +125,115 @@
         <div class="main-container">
           <div class="content">
             
-<div id="tags" class="tags page">
-  <article class="article post card">
+<div id="post" class="page">
+  
+  <article class="article post card" itemscope="" itemtype="http://schema.org/Article">
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/03/Linux-Ionic配置/">
+      <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="C. Young">
+       <meta itemprop="description" content="The day is Tody.">
+       <meta itemprop="image" content="/images/myavatar.jpg">
+      </span>
+      <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="CYoung">
+      </span>
+    </div>
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">标签</h1>
-    </header>
-    <main class="post-main">
-      <h2 class="page-counter">
+      <h1 class="post-title" itemprop="name headline">Linux Ionic配置</h1>
+      <div class="post-meta">
         
-        你已经创建了 11 个标签！
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-01-03T20:30:07+08:00">2019-01-03 20:30:07</time></span>
+        </span>
         
-      </h2>
-      <div class="tags-cloud">
-        <a href="/tags/CSS/" style="font-size: 32px; color: #111">CSS</a> <a href="/tags/CSS-样式/" style="font-size: 16px; color: #777">CSS 样式</a> <a href="/tags/JS/" style="font-size: 16px; color: #777">JS</a> <a href="/tags/ionic/" style="font-size: 16px; color: #777">ionic</a> <a href="/tags/linux/" style="font-size: 24px; color: #444">linux</a> <a href="/tags/函数/" style="font-size: 16px; color: #777">函数</a> <a href="/tags/动画/" style="font-size: 16px; color: #777">动画</a> <a href="/tags/样式/" style="font-size: 24px; color: #444">样式</a> <a href="/tags/配置/" style="font-size: 16px; color: #777">配置</a> <a href="/tags/错误/" style="font-size: 16px; color: #777">错误</a> <a href="/tags/错误解决/" style="font-size: 16px; color: #777">错误解决</a>
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a></span><i class="fas fa-angle-right"></i><span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Linux/Ionic/" itemprop="url" rel="index"><span itemprop="name">Ionic</span></a></span>
+        </span>
+        
+        
       </div>
+    </header>
+    <main class="post-main" itemprop="articleBody">
+      <h2 id="查看系统版本"><a href="#查看系统版本" class="headerlink" title="查看系统版本"></a>查看系统版本</h2><pre><code>uname -a
+</code></pre><h2 id="查看系统位数"><a href="#查看系统位数" class="headerlink" title="查看系统位数"></a>查看系统位数</h2><pre><code>uname -m
+</code></pre><p>如果是x86_64就是64位，如果是i686就是32位</p>
+<h2 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h2><ol>
+<li>进入Nodejs官网下载安装包</li>
+<li>解压安装包<pre><code>cd Downloads
+tar -xvf node-v10.14.2-linux-x64
+</code></pre></li>
+<li>将该目录移动到通用软件目录<pre><code>sudo mv node-v10.14.2-linux-x64 /opt/
+</code></pre></li>
+<li>安装 npm 和 node 命令到系统命令<pre><code>sudo ln -s /opt/node-v6.10.3-linux-x64/bin/node /usr/local/bin/node 
+sudo ln -s /opt/node-v6.10.3-linux-x64/bin/npm /usr/local/bin/npm
+</code></pre></li>
+<li>运行<code>npm -v</code>、<code>node -v</code>查看是否安装成功</li>
+</ol>
+<h2 id="搭建JAVA环境"><a href="#搭建JAVA环境" class="headerlink" title="搭建JAVA环境"></a>搭建JAVA环境</h2><ol>
+<li>下载<a href="https://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e4a523244c269598db4e85c51e0c/jdk-8u191-linux-x64.tar.gz" target="_blank" rel="noopener">jdk-8u191-linux-x64.tar.gz</a></li>
+<li>解压<pre><code>tar -zxvf jdk-8u191-linux-x64.tar.gz
+</code></pre></li>
+<li>移动到opt目录下<pre><code>sudo mv jdk1.8.0_191 /opt/
+</code></pre></li>
+</ol>
+<h2 id="搭建ANDROID环境"><a href="#搭建ANDROID环境" class="headerlink" title="搭建ANDROID环境"></a>搭建ANDROID环境</h2><ol>
+<li>下载<a href="http://tools.android-studio.org/index.php/sdk/" target="_blank" rel="noopener">android-sdk_r24.4.1-linux.tgz</a></li>
+<li>解压<pre><code>tar -zxvf android-sdk_r24.4.1-linux.tgz
+</code></pre></li>
+<li>移动到opt<pre><code>sudo mv android -sdk-linux /opt
+</code></pre></li>
+<li>更新（会获取到目前所有的安卓版本，文件会有点大）<pre><code>android-sdk-linux/tools/android update sdk --no-ui
+</code></pre></li>
+</ol>
+<h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><ol>
+<li>编辑profile文件<pre><code>sudo vim /etc/profile
+</code></pre></li>
+<li>在profile文件后加入如下代码<pre><code>export JAVA_HOME=/opt/java/jdk1.8.0_191
+export ANDROID_HOME=/opt/android-sdk-linux
+export PATH=$JAVA_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
+</code></pre></li>
+</ol>
+<h2 id="安装cordova-ionic"><a href="#安装cordova-ionic" class="headerlink" title="安装cordova ionic"></a>安装cordova ionic</h2><pre><code>npm install -g cordova ionic
+</code></pre><p>完成后运行<code>cordova</code>、<code>ionic</code>查看是否安装成功<br>如果安装太慢，可以设置淘宝镜像安装，或是使用cnpm安装</p>
+<pre><code>npm config set registry https://registry.npm.taobao.org
+</code></pre>
     </main>
-    <footer class="post-footer"></footer>
+    <footer class="post-footer">
+      
+      <div class="post-tags">
+        
+        <a class="post-tag button" href="/tags/linux/" rel="tag"><i class="fas fa-tags"></i>linux</a>
+        
+        <a class="post-tag button" href="/tags/ionic/" rel="tag"><i class="fas fa-tags"></i>ionic</a>
+        
+        <a class="post-tag button" href="/tags/配置/" rel="tag"><i class="fas fa-tags"></i>配置</a>
+        
+      </div>
+      
+    </footer>
   </article>
+  
+  
+  <nav class="page-nav">
+    <div class="page-nav-next page-nav-item">
+      
+      <a href="/2019/01/03/渐变与变形处理/" rel="next" title="CSS渐变与变形处理"><i class="fas fa-angle-left"></i><span class="nav-title">CSS渐变与变形处理</span></a>
+      
+    </div>
+    <div class="page-nav-prev page-nav-item">
+      
+      <a href="/2019/01/03/Linix-git提交出现错误everything-up-to-date的解决方法/" rel="prev" title="Linix git提交出现错误everything up to date的解决方法"><span class="nav-title">Linix git提交出现错误everything up to date的解决方法</span><i class="fas fa-angle-right"></i></a>
+      
+    </div>
+  </nav>
+  
+  
 </div>
 
           </div>
@@ -200,6 +291,17 @@
 
 
   <div class="sidebar-sticky">
+    
+    
+    
+    
+    
+    <hr>
+    <div class="post-toc sidebar-item" id="toc-div">
+      <div><i class="fas fa-list-ol"></i>文章目录</div>
+      <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#查看系统版本"><span class="toc-text">查看系统版本</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#查看系统位数"><span class="toc-text">查看系统位数</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#安装nodejs"><span class="toc-text">安装nodejs</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#搭建JAVA环境"><span class="toc-text">搭建JAVA环境</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#搭建ANDROID环境"><span class="toc-text">搭建ANDROID环境</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#配置环境变量"><span class="toc-text">配置环境变量</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#安装cordova-ionic"><span class="toc-text">安装cordova ionic</span></a></li></ol></div>
+    </div>
+    
     
     
     <hr>
@@ -271,5 +373,3 @@
 
   </body>
 </html>
-
-

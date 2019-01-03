@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-03T12:25:05.680Z</updated>
+  <updated>2019-01-03T12:34:20.213Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,23 +17,63 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2019/01/03/hello-world/"/>
-    <id>http://yoursite.com/2019/01/03/hello-world/</id>
-    <published>2019-01-03T12:25:05.680Z</published>
-    <updated>2019-01-03T12:25:05.680Z</updated>
+    <title>Linix git提交出现错误everything up to date的解决方法</title>
+    <link href="http://yoursite.com/2019/01/03/Linix-git%E6%8F%90%E4%BA%A4%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFeverything-up-to-date%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>http://yoursite.com/2019/01/03/Linix-git提交出现错误everything-up-to-date的解决方法/</id>
+    <published>2019-01-03T12:32:18.000Z</published>
+    <updated>2019-01-03T12:34:20.213Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        &lt;p&gt;如果你之前没有提交过文件,而你在git push的时候出现Everything up-to-date,并且文件也没有提交上去.可能是因为你没有git add 和 git commit. &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git add .
+git commit -m &amp;quo
       
     
     </summary>
     
-      <category term="HelloWorld" scheme="http://yoursite.com/categories/HelloWorld/"/>
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
     
+      <category term="git" scheme="http://yoursite.com/categories/Linux/git/"/>
+    
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+      <category term="错误解决" scheme="http://yoursite.com/tags/%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3/"/>
+    
+      <category term="错误" scheme="http://yoursite.com/tags/%E9%94%99%E8%AF%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux Ionic配置</title>
+    <link href="http://yoursite.com/2019/01/03/Linux-Ionic%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2019/01/03/Linux-Ionic配置/</id>
+    <published>2019-01-03T12:30:07.000Z</published>
+    <updated>2019-01-03T12:38:47.479Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;查看系统版本&quot;&gt;&lt;a href=&quot;#查看系统版本&quot; class=&quot;headerlink&quot; title=&quot;查看系统版本&quot;&gt;&lt;/a&gt;查看系统版本&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;uname -a
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;查看系统位数&quot;&gt;&lt;a href=
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+      <category term="Ionic" scheme="http://yoursite.com/categories/Linux/Ionic/"/>
+    
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+      <category term="ionic" scheme="http://yoursite.com/tags/ionic/"/>
+    
+      <category term="配置" scheme="http://yoursite.com/tags/%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
