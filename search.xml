@@ -4,9 +4,9 @@
   
     
     <entry>
-      <title>Linix git提交出现错误everything up to date的解决方法</title>
-      <link href="/2019/01/03/Linix-git%E6%8F%90%E4%BA%A4%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFeverything-up-to-date%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
-      <url>/2019/01/03/Linix-git%E6%8F%90%E4%BA%A4%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFeverything-up-to-date%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
+      <title>Linux git提交出现错误everything up to date的解决方法</title>
+      <link href="/2019/01/03/Linux-git%E6%8F%90%E4%BA%A4%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFeverything-up-to-date%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+      <url>/2019/01/03/Linux-git%E6%8F%90%E4%BA%A4%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFeverything-up-to-date%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
       
         <content type="html"><![CDATA[<p>如果你之前没有提交过文件,而你在git push的时候出现Everything up-to-date,并且文件也没有提交上去.可能是因为你没有git add 和 git commit. </p><pre><code>git add .git commit -m &quot;test&quot;// 不添加-m 是不能直接添加message的git pull origin  mastergit push origin master</code></pre>]]></content>
       
@@ -239,6 +239,17 @@
     
     
     <entry>
+      <title>about</title>
+      <link href="/about/index-1.html"/>
+      <url>/about/index-1.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>About</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -250,9 +261,9 @@
     
     
     <entry>
-      <title>about</title>
-      <link href="/about/index-1.html"/>
-      <url>/about/index-1.html</url>
+      <title>gallery</title>
+      <link href="/gallery/index.html"/>
+      <url>/gallery/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -275,17 +286,6 @@
       <title>categories</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>gallery</title>
-      <link href="/gallery/index.html"/>
-      <url>/gallery/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
