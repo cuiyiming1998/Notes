@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>CYoung</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-01-03T12:25:05.680Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>C. Young</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/01/03/hello-world/"/>
+    <id>http://yoursite.com/2019/01/03/hello-world/</id>
+    <published>2019-01-03T12:25:05.680Z</published>
+    <updated>2019-01-03T12:25:05.680Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+      <category term="HelloWorld" scheme="http://yoursite.com/categories/HelloWorld/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CSS渐变与变形处理</title>
+    <link href="http://yoursite.com/2019/01/03/%E6%B8%90%E5%8F%98%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%A4%84%E7%90%86/"/>
+    <id>http://yoursite.com/2019/01/03/渐变与变形处理/</id>
+    <published>2019-01-03T12:07:42.000Z</published>
+    <updated>2019-01-03T12:25:35.483Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;渐变与变形处理&quot;&gt;&lt;a href=&quot;#渐变与变形处理&quot; class=&quot;headerlink&quot; title=&quot;渐变与变形处理&quot;&gt;&lt;/a&gt;渐变与变形处理&lt;/h1&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2 id=&quot;渐变效果&quot;&gt;&lt;a href=&quot;#渐变效果&quot; class=&quot;hea
+      
+    
+    </summary>
+    
+      <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
+    
+      <category term="样式" scheme="http://yoursite.com/categories/CSS/%E6%A0%B7%E5%BC%8F/"/>
+    
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+      <category term="样式" scheme="http://yoursite.com/tags/%E6%A0%B7%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>背景与边框</title>
+    <link href="http://yoursite.com/2019/01/03/%E8%83%8C%E6%99%AF%E4%B8%8E%E8%BE%B9%E6%A1%86/"/>
+    <id>http://yoursite.com/2019/01/03/背景与边框/</id>
+    <published>2019-01-03T12:07:33.000Z</published>
+    <updated>2019-01-03T12:25:17.495Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;背景与边框&quot;&gt;&lt;a href=&quot;#背景与边框&quot; class=&quot;headerlink&quot; title=&quot;背景与边框&quot;&gt;&lt;/a&gt;背景与边框&lt;/h1&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2 id=&quot;背景样式&quot;&gt;&lt;a href=&quot;#背景样式&quot; class=&quot;headerlink&quot;
+      
+    
+    </summary>
+    
+      <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
+    
+      <category term="样式" scheme="http://yoursite.com/categories/CSS/%E6%A0%B7%E5%BC%8F/"/>
+    
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+      <category term="样式" scheme="http://yoursite.com/tags/%E6%A0%B7%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS动画</title>
+    <link href="http://yoursite.com/2019/01/03/CSS%E5%8A%A8%E7%94%BB/"/>
+    <id>http://yoursite.com/2019/01/03/CSS动画/</id>
+    <published>2019-01-03T12:07:03.000Z</published>
+    <updated>2019-01-03T12:26:34.345Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;CSS动画&quot;&gt;&lt;a href=&quot;#CSS动画&quot; class=&quot;headerlink&quot; title=&quot;CSS动画&quot;&gt;&lt;/a&gt;CSS动画&lt;/h1&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2 id=&quot;过渡&quot;&gt;&lt;a href=&quot;#过渡&quot; class=&quot;headerlink&quot; tit
+      
+    
+    </summary>
+    
+      <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
+    
+      <category term="动画" scheme="http://yoursite.com/categories/CSS/%E5%8A%A8%E7%94%BB/"/>
+    
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+      <category term="动画" scheme="http://yoursite.com/tags/%E5%8A%A8%E7%94%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS3概述</title>
+    <link href="http://yoursite.com/2019/01/03/CSS3%E6%A6%82%E8%BF%B0/"/>
+    <id>http://yoursite.com/2019/01/03/CSS3概述/</id>
+    <published>2019-01-03T12:06:53.000Z</published>
+    <updated>2019-01-03T12:23:53.054Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;CSS3概述&quot;&gt;&lt;a href=&quot;#CSS3概述&quot; class=&quot;headerlink&quot; title=&quot;CSS3概述&quot;&gt;&lt;/a&gt;CSS3概述&lt;/h1&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;p&gt;CSS用于控制网页的样式和布局&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CSS3是最新的CS
+      
+    
+    </summary>
+    
+      <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
+    
+      <category term="概述" scheme="http://yoursite.com/categories/CSS/%E6%A6%82%E8%BF%B0/"/>
+    
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS3文本字体与颜色</title>
+    <link href="http://yoursite.com/2019/01/03/%E6%96%87%E6%9C%AC%E5%AD%97%E4%BD%93%E4%B8%8E%E9%A2%9C%E8%89%B2/"/>
+    <id>http://yoursite.com/2019/01/03/文本字体与颜色/</id>
+    <published>2019-01-03T12:05:00.000Z</published>
+    <updated>2019-01-03T12:25:46.886Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;文本，字体与颜色&quot;&gt;&lt;a href=&quot;#文本，字体与颜色&quot; class=&quot;headerlink&quot; title=&quot;文本，字体与颜色&quot;&gt;&lt;/a&gt;文本，字体与颜色&lt;/h1&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2 id=&quot;文本样式&quot;&gt;&lt;a href=&quot;#文本样式&quot; class=
+      
+    
+    </summary>
+    
+      <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
+    
+      <category term="样式" scheme="http://yoursite.com/categories/CSS/%E6%A0%B7%E5%BC%8F/"/>
+    
+    
+      <category term="CSS 样式" scheme="http://yoursite.com/tags/CSS-%E6%A0%B7%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript this的四种绑定方式</title>
+    <link href="http://yoursite.com/2019/01/03/JavaScript-this%E7%9A%84%E5%9B%9B%E7%A7%8D%E7%BB%91%E5%AE%9A%E6%96%B9%E5%BC%8F/"/>
+    <id>http://yoursite.com/2019/01/03/JavaScript-this的四种绑定方式/</id>
+    <published>2019-01-03T11:15:06.000Z</published>
+    <updated>2019-01-03T12:27:04.204Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;JavaScript函数中this的四种绑定&quot;&gt;&lt;a href=&quot;#JavaScript函数中this的四种绑定&quot; class=&quot;headerlink&quot; title=&quot;JavaScript函数中this的四种绑定&quot;&gt;&lt;/a&gt;JavaScript函数中&lt;code&gt;t
+      
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://yoursite.com/categories/JavaScript/"/>
+    
+      <category term="函数" scheme="http://yoursite.com/categories/JavaScript/%E5%87%BD%E6%95%B0/"/>
+    
+    
+      <category term="JS" scheme="http://yoursite.com/tags/JS/"/>
+    
+      <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
+    
+  </entry>
+  
+</feed>

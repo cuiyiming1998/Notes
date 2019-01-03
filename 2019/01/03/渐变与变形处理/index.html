@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+  <head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#33363b">
+    <meta name="msapplication-TileColor" content="#33363b">
+    
+    
+    
+    
+    <meta name="keywords" content="Life, ARIA, Hexo">
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    
+    
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#33363b">
+    
+    
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    
+    
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    
+    
+    <link rel="alternate" href="/atom.xml" title="CYoung" type="application/atom+xml">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
+    
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    
+    <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
+    
+    
+<link rel="stylesheet" type="text/css" href="/css/page.css">
+<link rel="stylesheet" type="text/css" href="/css/post.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/css/atom-one-light.css">
+    <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script defer type="text/javascript" src="/js/util.js"></script>
+    <script defer type="text/javascript" src="/js/scrollspy.js"></script>
+    <script defer type="text/javascript" src="/js/fontawesome-all.min.js"></script>
+    <script defer type="text/javascript" src="/js/lightgallery.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-fullscreen.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-hash.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-pager.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-thumbnail.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-zoom.min.js"></script>
+    
+    <script defer src="/js/busuanzi.pure.mini.js"></script>
+    
+    
+    <script defer type="text/javascript" src="/js/search.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      var searchPath = "search.xml";
+      if (searchPath.length === 0) {
+        searchPath = "search.xml";
+      }
+      var path = "/" + searchPath;
+      searchFunc(path, "search-input", "search-result");
+    });
+    </script>
+    
+    
+    <script defer type="text/javascript" src="/js/index.js"></script>
+    
+    <script defer type="text/javascript" src="/js/custom.js"></script>
+    <title>CSS渐变与变形处理 | CYoung</title>
+  </head>
+  <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh_CN" data-spy="scroll" data-target=".list-group">
+    
+<header id="header" class="header" style="background: #33363b;">
+  <div class="container">
+    <div class="header-container">
+      <div class="header-title">
+        <h1 class="title"><a href="/">CYoung</a></h1>
+        <h2 class="subtitle"></h2>
+      </div>
+      
+      <div class="logo">
+        <img src="/images/logo.png" alt="logo">
+      </div>
+      
+    </div>
+    <nav id="nav" class="nav">
+      <a id="nav-toggle" class="nav-toggle" aria-hidden="true"><i class="fas fa-bars" aria-label="切换导航栏"></i></a>
+      <ul id="menu" role="menubar" aria-hidden="false">
+        
+        <li role="menuitem"><a href="/">首页</a></li>
+        
+        <li role="menuitem"><a href="/archives/">归档</a></li>
+        
+        <li role="menuitem"><a href="/categories/">分类</a></li>
+        
+        <li role="menuitem"><a href="/tags/">标签</a></li>
+        
+        <li role="menuitem"><a href="/about/">关于</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <main id="main" class="main">
+      <div class="container">
+        <div class="main-container">
+          <div class="content">
+            
+<div id="post" class="page">
+  
+  <article class="article post card" itemscope="" itemtype="http://schema.org/Article">
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/03/渐变与变形处理/">
+      <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="C. Young">
+       <meta itemprop="description" content="The day is Tody.">
+       <meta itemprop="image" content="/images/myavatar.jpg">
+      </span>
+      <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="CYoung">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">CSS渐变与变形处理</h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-01-03T20:07:42+08:00">2019-01-03 20:07:42</time></span>
+        </span>
+        
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a></span><i class="fas fa-angle-right"></i><span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/CSS/样式/" itemprop="url" rel="index"><span itemprop="name">样式</span></a></span>
+        </span>
+        
+        
+      </div>
+    </header>
+    <main class="post-main" itemprop="articleBody">
+      <h1 id="渐变与变形处理"><a href="#渐变与变形处理" class="headerlink" title="渐变与变形处理"></a>渐变与变形处理</h1><p>[TOC]</p>
+<h2 id="渐变效果"><a href="#渐变效果" class="headerlink" title="渐变效果"></a>渐变效果</h2><p>网页中的渐变效果包括渐变背景、渐变导航、渐变按钮等</p>
+<p><strong>CSS3渐变分类</strong></p>
+<p>线性渐变，径向渐变</p>
+<p><strong>CSS3渐变优点</strong></p>
+<p>代替使用图像来实现效果，可以减少下载的时间和宽带的使用。</p>
+<p>由浏览器生成，在放大时看起来效果更好。</p>
+<h3 id="线性渐变"><a href="#线性渐变" class="headerlink" title="线性渐变"></a>线性渐变</h3><p>语法：<code>background: linear-gradient(direction,color-stop1,color-stop2,...)</code></p>
+<p>在一条直线上进行颜色渐变，渐变线由包含渐变图形的容器的中心点和一个角度来定义的。</p>
+<p><code>linear-gradient()</code> 函数创建一个没有内在尺寸的，表示颜色线性渐变的<code>&lt;image&gt;</code> 图像；它既不具有固有的或首选的尺寸，也不具有比率。它的具体尺寸将与其适用的元素尺寸匹配。</p>
+<p>第一个参数：指定渐变方向，可以用<strong>角度</strong>或<strong>英文关键词</strong>来表示。</p>
+<p>第一个参数省略时，默认为<strong>180edg</strong>，等同于<strong>to bottom</strong></p>
+<p>第二个和第三个参数，表示颜色的开始点和结束点，可以有多个颜色值。</p>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token style language-css">
+    <span class="token selector"><span class="token class">.div1</span></span><span class="token punctuation">{</span>
+        <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>to bottom left,red <span class="token number">20%</span>,yellow <span class="token number">40%</span>,green<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">/*
+            前20%红色，20%~40%黄色，剩下的绿色
+        */</span>
+    <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="重复的线性渐变"><a href="#重复的线性渐变" class="headerlink" title="重复的线性渐变"></a>重复的线性渐变</h3><p>语法： <code>repeating-linear-gradient()</code></p>
+<h4 id="切角效果"><a href="#切角效果" class="headerlink" title="切角效果"></a>切角效果</h4><pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
+    <span class="token selector"><span class="token class">.div1</span></span><span class="token punctuation">{</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
+        <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span><span class="token number">45</span>deg,transparent <span class="token number">20</span>px, lightgreen <span class="token number">0</span>px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>div1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="C:\Users\dell\Desktop\markdown\imgs\切角效果.png" alt="切角效果"></p>
+<h4 id="渐变按钮"><a href="#渐变按钮" class="headerlink" title="渐变按钮"></a>渐变按钮</h4><pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
+    <span class="token selector">a</span><span class="token punctuation">{</span>
+        <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">15</span>px<span class="token punctuation">;</span>
+        <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">6</span>px<span class="token punctuation">;</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#623f1d</span><span class="token punctuation">;</span>
+        <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">18</span>px <span class="token punctuation">;</span>
+        <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>to top, <span class="token hexcode">#ffce63</span>, <span class="token hexcode">#fcaa35</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector">a<span class="token pseudo-class">:hover</span></span><span class="token punctuation">{</span>
+        <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>to top, <span class="token hexcode">#fcaa35</span>,<span class="token hexcode">#ffce63</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>渐变按钮<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="径向渐变"><a href="#径向渐变" class="headerlink" title="径向渐变"></a>径向渐变</h3><p>是一种从起点到终点颜色从内到外进行圆形渐变（从中间向外拉，像圆一样）。在径向渐变中没有设置位置时，其默认颜色为均匀间隔，设置了渐变位置就会按照渐变位置去渐变。</p>
+<p>语法：<code>background: radial-gradient(shape at position,color1-stop,color2-stop,...)</code></p>
+<h4 id="shape"><a href="#shape" class="headerlink" title="shape"></a><code>shape</code></h4><ul>
+<li><code>circle</code>——定义渐变为<strong>圆形</strong></li>
+<li><code>ellipse</code>——定义渐变为<strong>椭圆形</strong></li>
+</ul>
+<h4 id="position"><a href="#position" class="headerlink" title="position"></a><code>position</code></h4><ul>
+<li>长度值 px（可负）</li>
+<li>百分比 %（可负）</li>
+</ul>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token selector"><span class="token class">.div1</span></span><span class="token punctuation">{</span>
+    <span class="token property">background</span><span class="token punctuation">:</span><span class="token function">radial-gradient</span><span class="token punctuation">(</span><span class="token number">50%50%</span>,red <span class="token number">0%</span>,yellow <span class="token number">20%</span>,black <span class="token number">50%</span>,green <span class="token number">80%</span>,yellow<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token class">.div3</span></span><span class="token punctuation">{</span>
+    <span class="token property">background</span><span class="token punctuation">:</span><span class="token function">radial-gradient</span><span class="token punctuation">(</span>circleat topleft, red <span class="token number">0%</span>,yellow <span class="token number">20%</span>,black <span class="token number">50%</span>,green <span class="token number">80%</span>,yellow<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="CSS3变形"><a href="#CSS3变形" class="headerlink" title="CSS3变形"></a>CSS3变形</h2><p>在CSS3中提供了<code>transform</code>和<code>transform-origin</code>两个用于实现2D变换的属性。</p>
+<p><code>transform</code>属性用于实现平移、缩放、旋转和倾斜等2D变换。</p>
+<p><code>transform-origin</code>属性则是用于设置变换的中心点的。</p>
+<h3 id="transform"><a href="#transform" class="headerlink" title="transform"></a><code>transform</code></h3><p><code>transform</code>属性向元素应用2D或3D转换。通过转换能够对元素进行旋转、缩放、移动、倾斜或拉伸。</p>
+<p>Chrome和Safari需要前缀<code>-webkit-</code></p>
+<p>Firefox需要前缀<code>-moz-</code></p>
+<p>Opera需要前缀<code>-o-</code></p>
+<p>IE9需要前缀<code>-ms-</code></p>
+<p>语法： <code>transform: none | transform-functions</code></p>
+<p><code>transform</code>属性的属性值由值及函数组成。</p>
+<h4 id="移动——translate-方法"><a href="#移动——translate-方法" class="headerlink" title="移动——translate()方法"></a>移动——<code>translate()</code>方法</h4><p><code>translate()</code>方法能够<strong>重新定位</strong>元素的坐标。</p>
+<ul>
+<li><code>translateX(x)</code>：元素仅在水平方向移动;</li>
+<li><code>translateY(y)</code>：元素仅在垂直方向移动;</li>
+<li><code>translate(x,y)</code>：元素在水平和垂直方向同时移动;</li>
+</ul>
+<p>实例：</p>
+<p><img src="C:\Users\dell\Desktop\Notes\imgs\translate(" alt="translate()">.png)</p>
+<pre class="line-numbers language-html"><code class="language-html"> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token style language-css">
+        <span class="token selector"><span class="token class">.test</span> ul </span><span class="token punctuation">{</span> <span class="token property">list-style</span><span class="token punctuation">:</span>none<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.test</span> li </span><span class="token punctuation">{</span>
+            <span class="token property">float</span><span class="token punctuation">:</span>left<span class="token punctuation">;</span>
+            <span class="token property">width</span><span class="token punctuation">:</span><span class="token number">100</span>px<span class="token punctuation">;</span>
+            <span class="token property">background</span><span class="token punctuation">:</span><span class="token hexcode">#CCC</span><span class="token punctuation">;</span>
+            <span class="token property">margin-left</span><span class="token punctuation">:</span><span class="token number">3</span>px<span class="token punctuation">;</span>
+            <span class="token property">line-height</span><span class="token punctuation">:</span><span class="token number">30</span>px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.test</span> a </span><span class="token punctuation">{</span>
+            <span class="token property">display</span><span class="token punctuation">:</span>block<span class="token punctuation">;</span>
+            <span class="token property">text-align</span><span class="token punctuation">:</span>center<span class="token punctuation">;</span>
+            <span class="token property">height</span><span class="token punctuation">:</span><span class="token number">30</span>px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.test</span> a<span class="token pseudo-class">:link</span></span><span class="token punctuation">{</span>
+            <span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+            <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.test</span> a<span class="token pseudo-class">:hover</span> </span><span class="token punctuation">{</span>
+            <span class="token property">color</span><span class="token punctuation">:</span><span class="token hexcode">#fff</span><span class="token punctuation">;</span>
+            <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+            <span class="token property">background</span><span class="token punctuation">:</span><span class="token url">url(images/icon2.jpg)</span> red no-repeat <span class="token number">5</span>px <span class="token number">12</span>px<span class="token punctuation">;</span>
+            <span class="token property">text-decoration</span><span class="token punctuation">:</span>none<span class="token punctuation">;</span>
+            <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate</span><span class="token punctuation">(</span>-<span class="token number">4</span>px,-<span class="token number">4</span>px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.test</span> a<span class="token pseudo-class">:visited</span> </span><span class="token punctuation">{</span>
+            <span class="token property">color</span><span class="token punctuation">:</span><span class="token hexcode">#666</span><span class="token punctuation">;</span>
+            <span class="token property">text-decoration</span><span class="token punctuation">:</span>underline<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>test<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>首页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>新闻<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>论坛<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>4<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>博客<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>团购<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>6<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>微博<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="旋转——rotate-方法"><a href="#旋转——rotate-方法" class="headerlink" title="旋转——rotate()方法"></a>旋转——<code>rotate()</code>方法</h4><p><code>rotate()</code>方法能够相对中心原点<strong>旋转</strong>指定的元素。</p>
+<p>语法：<code>transform: rotate(angle)</code></p>
+<p>正角度为顺时针旋转元素</p>
+<p>负角度为逆时针旋转元素</p>
+<h4 id="缩放——scale-方法"><a href="#缩放——scale-方法" class="headerlink" title="缩放——scale()方法"></a>缩放——<code>scale()</code>方法</h4><p><code>scale()</code>方法能够实现文字或图像根据中心原点进行缩放</p>
+<ul>
+<li><code>scaleX(x)</code></li>
+<li><code>scaleY(y)</code></li>
+<li><code>scale(x,y)</code></li>
+</ul>
+<p>绝对值大于1，代表放大。</p>
+<p>绝对值小于1，代表缩小。</p>
+<p>绝对值等于1，不缩放。</p>
+<p>当值为负数时对象反转。</p>
+<h4 id="倾斜——skew-方法"><a href="#倾斜——skew-方法" class="headerlink" title="倾斜——skew()方法"></a>倾斜——<code>skew()</code>方法</h4><p><code>skew()</code>方法能够<strong>倾斜</strong>指定元素。</p>
+<p><code>skewX(x)</code></p>
+<p><code>skewY(y)</code></p>
+<p><code>skew(x,y)</code>：元素水平方向和垂直方向同时倾斜；如果第二个参数为空，则默认为0，参数为负表示向相反方向倾斜。</p>
+<h4 id="3D变形"><a href="#3D变形" class="headerlink" title="3D变形"></a>3D变形</h4><p>CSS3允许使用3D转换来实现元素在X轴、Y轴、Z轴方向上的变形处理。</p>
+<h5 id="3D旋转"><a href="#3D旋转" class="headerlink" title="3D旋转"></a>3D旋转</h5><p><code>roteteX(angle)</code>、<code>rotateY(angle)</code>、<code>rotateZ(angle)</code></p>
+<h3 id="transform-origin"><a href="#transform-origin" class="headerlink" title="transform-origin"></a><code>transform-origin</code></h3><p><code>transform-origin</code>属性更改变换的基点位置。</p>
+<p>语法<code>transform: x-axis y-axis</code></p>
+<p>默认情况下，元素基点位置为元素的中心点，即X轴和Y轴的<strong>50%</strong>处。</p>
+<p>CSS3变形进行的位移、缩放、旋转、倾斜都是以元素的基点进行变形。</p>
+<h3 id="多重变形"><a href="#多重变形" class="headerlink" title="多重变形"></a>多重变形</h3><p>对同一元素可添加多种变形效果</p>
+<p><code>transform: translate(150px,200px) rotate(120deg) scale(1.5,1.5)</code></p>
+<h2 id="实例——照片墙"><a href="#实例——照片墙" class="headerlink" title="实例——照片墙"></a>实例——照片墙</h2><p>使用纯HTML和CSS实现照片墙效果。</p>
+<p>照片随意排列，鼠标经过时照片正放并放大。</p>
+
+    </main>
+    <footer class="post-footer">
+      
+      <div class="post-tags">
+        
+        <a class="post-tag button" href="/tags/CSS/" rel="tag"><i class="fas fa-tags"></i>CSS</a>
+        
+        <a class="post-tag button" href="/tags/样式/" rel="tag"><i class="fas fa-tags"></i>样式</a>
+        
+      </div>
+      
+    </footer>
+  </article>
+  
+  
+  <nav class="page-nav">
+    <div class="page-nav-next page-nav-item">
+      
+      <a href="/2019/01/03/背景与边框/" rel="next" title="背景与边框"><i class="fas fa-angle-left"></i><span class="nav-title">背景与边框</span></a>
+      
+    </div>
+    <div class="page-nav-prev page-nav-item">
+      
+      <a href="/2019/01/03/hello-world/" rel="prev" title="Hello World"><span class="nav-title">Hello World</span><i class="fas fa-angle-right"></i></a>
+      
+    </div>
+  </nav>
+  
+  
+</div>
+
+          </div>
+          
+          
+          
+<aside class="sidebar" id="sidebar" style="background: url(/images/background.png);">
+  
+  <div class="search">
+    <div class="form-group">
+      <i class="fas fa-search"></i><input type="search" id="search-input" name="q" results="0" placeholder="搜索" class="form-control">
+    </div>
+  </div>
+  <div class="search-result-box" id="search-result"></div>
+  
+  
+<div class="info sidebar-item" id="info">
+  
+  <img class="author-avatar" src="/images/myavatar.jpg" alt="C. Young">
+  
+  <h1 class="author-name">C. Young</h1>
+  <h2 class="author-description">The day is Tody.</h2>
+  <div class="site-count">
+    
+    <div class="archives-count">
+      <div class="site-count-title">归档</div>
+      <div><a href="/archives/">7</a></div>
+    </div>
+    
+    
+    
+    <span class="site-count-divider divider">|</span>
+    
+    <div class="categories-count">
+      <div class="site-count-title">分类</div>
+      <div><a href="/categories/">7</a></div>
+    </div>
+    
+    
+    
+    <span class="site-count-divider divider">|</span>
+    
+    <div class="tags-count">
+      <div class="site-count-title">标签</div>
+      <div><a href="/tags/">9</a></div>
+    </div>
+    
+  </div>
+  
+  <div class="rss">
+    <a class="rss-link button sidebar-item" href="/atom.xml"><i class="fas fa-rss"></i>RSS</a>
+  </div>
+  
+</div>
+
+
+  <div class="sidebar-sticky">
+    
+    
+    
+    
+    
+    <hr>
+    <div class="post-toc sidebar-item" id="toc-div">
+      <div><i class="fas fa-list-ol"></i>文章目录</div>
+      <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-1"><a class="list-group-item toc-link" href="#渐变与变形处理"><span class="toc-text">渐变与变形处理</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#渐变效果"><span class="toc-text">渐变效果</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#线性渐变"><span class="toc-text">线性渐变</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#重复的线性渐变"><span class="toc-text">重复的线性渐变</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#切角效果"><span class="toc-text">切角效果</span></a></li><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#渐变按钮"><span class="toc-text">渐变按钮</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#径向渐变"><span class="toc-text">径向渐变</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#shape"><span class="toc-text">shape</span></a></li><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#position"><span class="toc-text">position</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#CSS3变形"><span class="toc-text">CSS3变形</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#transform"><span class="toc-text">transform</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#移动——translate-方法"><span class="toc-text">移动——translate()方法</span></a></li><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#旋转——rotate-方法"><span class="toc-text">旋转——rotate()方法</span></a></li><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#缩放——scale-方法"><span class="toc-text">缩放——scale()方法</span></a></li><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#倾斜——skew-方法"><span class="toc-text">倾斜——skew()方法</span></a></li><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#3D变形"><span class="toc-text">3D变形</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-5"><a class="list-group-item toc-link" href="#3D旋转"><span class="toc-text">3D旋转</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#transform-origin"><span class="toc-text">transform-origin</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#多重变形"><span class="toc-text">多重变形</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#实例——照片墙"><span class="toc-text">实例——照片墙</span></a></li></ol></li></ol></div>
+    </div>
+    
+    
+    
+    <hr>
+    <div class="social-link sidebar-item">
+      <div><i class="far fa-address-card"></i>社交链接<p></p></div>
+      <ul>
+        
+        <li><i class="fas fa-envelope"></i><a href="mailto:1269567664@qq.com" target="_blank">E-Mail</a></li>
+        
+        <li><i class="fab fa-github"></i><a href="https://github.com/cuiyiming1998" target="_blank">GitHub</a></li>
+        
+        <li><i class="fab fa-weibo"></i><a href="https://weibo.com/u/2931431005" target="_blank">Weibo</a></li>
+        
+      </ul>
+    </div>
+    
+    
+    <hr>
+    <div class="blogroll sidebar-item">
+      <div><i class="fas fa-link"></i>友情链接</div>
+      <ul>
+        
+        <li><i class="fas fa-link"></i><a href="https://github.com/cuiyiming1998" target="_blank">GitHub</a></li>
+        
+        <li><i class="fas fa-link"></i><a href="https://developer.mozilla.org/" target="_blank">MDN</a></li>
+        
+      </ul>
+    </div>
+    
+  </div>
+</aside>
+
+
+          
+        </div>
+      </div>
+    </main>
+    
+<footer id="footer" class="footer" style="background: #33363b;">
+  <div class="container">
+    <div class="back-to-top">
+      <button id="back-to-top"><i class="fas fa-angle-double-up" aria-label="回到顶部"></i></button>
+    </div>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="copyright">
+          <span class="author">C. Young</span><span class="year"><i class="far fa-copyright"></i>2019</span>
+        </div>
+        
+        <div class="busuanzi">
+          <span id="busuanzi_container_site_pv"><i class="fas fa-eye" aria-label="站点点击量" aria-hidden="false"></i><span id="busuanzi_value_site_pv"></span></span><span id="busuanzi_container_site_uv"><i class="fas fa-user" aria-label="站点用户数" aria-hidden="false"></i><span id="busuanzi_value_site_uv"></span></span><span id="busuanzi_container_page_pv"><i class="far fa-file-alt"></i><span id="busuanzi_value_page_pv" aria-label="页面点击量" aria-hidden="false"></span></span>
+        </div>
+        
+      </div>
+      <div class="footer-right">
+        <div class="custom-info">
+          
+          托管于<i class="fab fa-github-alt"></i><a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+          
+        </div>
+        <div class="powered-by">
+          由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>
