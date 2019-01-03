@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-03T12:40:23.423Z</updated>
+  <updated>2019-01-03T12:45:59.961Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://yoursite.com/2019/01/03/test/"/>
+    <id>http://yoursite.com/2019/01/03/test/</id>
+    <published>2019-01-03T12:45:59.000Z</published>
+    <updated>2019-01-03T12:45:59.961Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Linux git提交出现错误everything up to date的解决方法</title>
