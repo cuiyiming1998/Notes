@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-03T12:40:23.423Z</updated>
+  <updated>2019-01-04T10:50:45.951Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Node.js EventEmitter</title>
+    <link href="http://yoursite.com/2019/01/04/Node-js-EventEmitter/"/>
+    <id>http://yoursite.com/2019/01/04/Node-js-EventEmitter/</id>
+    <published>2019-01-04T09:05:24.000Z</published>
+    <updated>2019-01-04T10:50:45.951Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;node.js所有的异步I/O操作在完成时都会发送一个事件到事件队列。&lt;/p&gt;
+&lt;p&gt;Node.js里面的许多对象都会分发事件： 一个&lt;code&gt;net.server&lt;/code&gt;对象会在每次有新连接时触发一个事件，一个&lt;code&gt;fs.ReadStream&lt;/code&gt;对
+      
+    
+    </summary>
+    
+      <category term="Node.js" scheme="http://yoursite.com/categories/Node-js/"/>
+    
+    
+      <category term="Node.js" scheme="http://yoursite.com/tags/Node-js/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux git提交出现错误everything up to date的解决方法</title>
