@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Node.js Stream-流</title>
+      <link href="/2019/01/06/Node-js-Stream-%E6%B5%81/"/>
+      <url>/2019/01/06/Node-js-Stream-%E6%B5%81/</url>
+      
+        <content type="html"><![CDATA[<p><code>Stream</code>是一个抽象接口，Node中有很多对象实现了这个借口。例如对http服务器发起请求的<code>request</code>对象就是一个<code>Stream</code>，还有<code>stdout（标准输出）</code>。</p><p><code>Node.js Stream</code>有四种流类型：</p><ol><li><code>Readable</code> -&gt; 可读操作。</li><li><code>Writable</code> - &gt; 可写操作。</li><li><code>Duplex</code> - &gt; 可读可写操作。</li><li><code>Transform</code> - &gt; 操作被写入数据，然后读出结果。</li></ol><p>所有的<code>Stream</code>对象都是<code>EventEmitter</code>的实例。常用的事件有：</p><ol><li><code>data</code> -&gt; 当有数据可读时触发。</li><li><code>end</code> - &gt; 没有更多的数据可读时触发。</li><li><code>error</code> - &gt; 在接收和写入过程中发生错误时触发。</li><li><code>finish</code> - &gt; 所有数据已被写入到底层系统时触发。</li></ol><h2 id="从流中读取数据"><a href="#从流中读取数据" class="headerlink" title="从流中读取数据"></a>从流中读取数据</h2><p>创建input.txt文件，内容如下：</p><pre class="line-numbers language-javascript"><code class="language-javascript">百度：www<span class="token punctuation">.</span>baidu<span class="token punctuation">.</span>com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>创建main.js文件，内容如下：</p><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">var</span> data <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 创建可读流</span><span class="token keyword">var</span> readerStream <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">createReadStream</span><span class="token punctuation">(</span><span class="token string">'input.txt'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 设置编码为utf-8</span>readerStream<span class="token punctuation">.</span><span class="token function">setEncoding</span><span class="token punctuation">(</span><span class="token string">'UTF8'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 处理流事件 --> data, end, error</span>rederStream<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'data'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>chunk<span class="token punctuation">)</span><span class="token punctuation">{</span>    data <span class="token operator">+</span><span class="token operator">=</span> chunk<span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>readerStream<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>readerStream<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">.</span>stack<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'程序执行完毕'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>执行代码后结果如下：</p><pre class="line-numbers language-javascript"><code class="language-javascript">程序执行完毕百度： www<span class="token punctuation">.</span>baidu<span class="token punctuation">.</span>com<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="写入流"><a href="#写入流" class="headerlink" title="写入流"></a>写入流</h2><p>创建main.js文件，代码如下：</p><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"fs"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">var</span> data <span class="token operator">=</span> <span class="token string">'百度：www.baidu.com'</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 创建一个可以写入的流，写入到文件 output.txt 中</span><span class="token keyword">var</span> writerStream <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">createWriteStream</span><span class="token punctuation">(</span><span class="token string">'output.txt'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 使用 utf8 编码写入数据</span>writerStream<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span><span class="token string">'UTF8'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 标记文件末尾</span>writerStream<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 处理流事件 --> data, end, and error</span>writerStream<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'finish'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"写入完成。"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>writerStream<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">.</span>stack<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"程序执行完毕"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>以上程序会将<code>data</code>变量的数据写入到output.txt中。代码执行结果如下；</p><pre class="line-numbers language-javascript"><code class="language-javascript">$ node main<span class="token punctuation">.</span>js程序执行完毕写入完成。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>查看output.txt文件的内容：</p><pre class="line-numbers language-javascript"><code class="language-javascript">$ cat output<span class="token punctuation">.</span>txt百度：www<span class="token punctuation">.</span>baidu<span class="token punctuation">.</span>com<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="管道流"><a href="#管道流" class="headerlink" title="管道流"></a>管道流</h2><p>管道提供了一个输出流到输入流的机制。通常我们用于从一个流中获取数据并将数据传递到另外一个流中。</p><p><img src="/2019/01/06/Node-js-Stream-流/source-dest.png" alt="管道流"></p><p>我们把文件比作装水的桶，而内容就是桶中的水，我们用一根管道（pipe）链接两个水桶，使得一个水桶里的水可以流入另一个桶。这样就慢慢的实现了大文件的复制过程。</p><p>设置input.txt文件内容如下：</p><pre class="line-numbers language-javascript"><code class="language-javascript">百度：www<span class="token punctuation">.</span>baidu<span class="token punctuation">.</span>com管道流操作实例<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>创建main.js文件，代码如下：</p><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 创建一个可读流</span><span class="token keyword">var</span> readerStream <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">createReadStream</span><span class="token punctuation">(</span><span class="token string">'input.txt'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 创建一个可写流</span><span class="token keyword">var</span> writerStrean <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">createWriteStream</span><span class="token punctuation">(</span><span class="token string">'output.txt'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 管道读写操作</span><span class="token comment" spellcheck="true">// 读取input.txt的内容，并将内容写入到output.txt文件中。</span>readerStream<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>writeStream<span class="token punctuation">)</span><span class="token punctuation">;</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'程序执行完毕'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>执行后，查看output.txt的内容：</p><pre class="line-numbers language-javascript"><code class="language-javascript">百度：www<span class="token punctuation">.</span>baidu<span class="token punctuation">.</span>com管道流操作实例<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="链式流"><a href="#链式流" class="headerlink" title="链式流"></a>链式流</h2><p>链式是通过连接输出流到另外一个流并创建多个流操作链的机制。链式流一般用于管道操作。</p><p>接下来我们就是用管道和链式来压缩和解压文件。</p><p>创建compress.js文件，代码如下：</p><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"fs"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">var</span> zlib <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'zlib'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 压缩 input.txt 文件为 input.txt.gz</span>fs<span class="token punctuation">.</span><span class="token function">createReadStream</span><span class="token punctuation">(</span><span class="token string">'input.txt'</span><span class="token punctuation">)</span>  <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>zlib<span class="token punctuation">.</span><span class="token function">createGzip</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>fs<span class="token punctuation">.</span><span class="token function">createWriteStream</span><span class="token punctuation">(</span><span class="token string">'input.txt.gz'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"文件压缩完成。"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>压缩完成。</p><p>创建decompress.js文件，代码如下；</p><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"fs"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">var</span> zlib <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'zlib'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// 解压 input.txt.gz 文件为 input.txt</span>fs<span class="token punctuation">.</span><span class="token function">createReadStream</span><span class="token punctuation">(</span><span class="token string">'input.txt.gz'</span><span class="token punctuation">)</span>  <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>zlib<span class="token punctuation">.</span><span class="token function">createGunzip</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>fs<span class="token punctuation">.</span><span class="token function">createWriteStream</span><span class="token punctuation">(</span><span class="token string">'input.txt'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"文件解压完成。"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>解压完成。</p><hr><p>参考于 <a href="http://www.runoob.com" target="_blank" rel="noopener">www.runoob.com</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Node.js </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Node.js </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Node.js EventEmitter</title>
       <link href="/2019/01/04/Node-js-EventEmitter/"/>
       <url>/2019/01/04/Node-js-EventEmitter/</url>
@@ -264,17 +289,6 @@
     
     
     <entry>
-      <title>about</title>
-      <link href="/about/index-1.html"/>
-      <url>/about/index-1.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>About</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -286,9 +300,31 @@
     
     
     <entry>
+      <title>about</title>
+      <link href="/about/index-1.html"/>
+      <url>/about/index-1.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>categories</title>
       <link href="/categories/index-1.html"/>
       <url>/categories/index-1.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>gallery</title>
+      <link href="/gallery/index.html"/>
+      <url>/gallery/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -311,17 +347,6 @@
       <title>tags</title>
       <link href="/tags/index-1.html"/>
       <url>/tags/index-1.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>gallery</title>
-      <link href="/gallery/index.html"/>
-      <url>/gallery/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
