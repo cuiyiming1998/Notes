@@ -63,8 +63,6 @@
       
       <categories>
           
-          <category> Linux </category>
-          
           <category> git </category>
           
       </categories>
@@ -127,8 +125,6 @@
           
           <category> CSS </category>
           
-          <category> 样式 </category>
-          
       </categories>
       
       
@@ -155,8 +151,6 @@
       <categories>
           
           <category> CSS </category>
-          
-          <category> 样式 </category>
           
       </categories>
       
@@ -185,8 +179,6 @@
           
           <category> CSS </category>
           
-          <category> 动画 </category>
-          
       </categories>
       
       
@@ -214,8 +206,6 @@
           
           <category> CSS </category>
           
-          <category> 概述 </category>
-          
       </categories>
       
       
@@ -240,8 +230,6 @@
       <categories>
           
           <category> CSS </category>
-          
-          <category> 样式 </category>
           
       </categories>
       
@@ -268,8 +256,6 @@
           
           <category> JavaScript </category>
           
-          <category> 函数 </category>
-          
       </categories>
       
       
@@ -293,7 +279,7 @@
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h2>]]></content>
       
     </entry>
     
@@ -304,7 +290,7 @@
       <link href="/about/index-1.html"/>
       <url>/about/index-1.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h2>]]></content>
       
     </entry>
     
@@ -314,17 +300,6 @@
       <title>categories</title>
       <link href="/categories/index-1.html"/>
       <url>/categories/index-1.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>gallery</title>
-      <link href="/gallery/index.html"/>
-      <url>/gallery/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -347,6 +322,17 @@
       <title>tags</title>
       <link href="/tags/index-1.html"/>
       <url>/tags/index-1.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>gallery</title>
+      <link href="/gallery/index.html"/>
+      <url>/gallery/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       

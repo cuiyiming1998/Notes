@@ -44,7 +44,7 @@
     <link href="http://yoursite.com/2019/01/04/Node-js-EventEmitter/"/>
     <id>http://yoursite.com/2019/01/04/Node-js-EventEmitter/</id>
     <published>2019-01-04T09:05:24.000Z</published>
-    <updated>2019-01-04T11:51:34.739Z</updated>
+    <updated>2019-01-06T12:29:51.861Z</updated>
     
     <summary type="html">
     
@@ -68,7 +68,7 @@
     <link href="http://yoursite.com/2019/01/03/Linux-git%E6%8F%90%E4%BA%A4%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AFeverything-up-to-date%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
     <id>http://yoursite.com/2019/01/03/Linux-git提交出现错误everything-up-to-date的解决方法/</id>
     <published>2019-01-03T12:32:18.000Z</published>
-    <updated>2019-01-03T12:40:23.423Z</updated>
+    <updated>2019-01-06T12:53:42.837Z</updated>
     
     <summary type="html">
     
@@ -81,9 +81,7 @@ git commit -m &amp;quo
     
     </summary>
     
-      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
-    
-      <category term="git" scheme="http://yoursite.com/categories/Linux/git/"/>
+      <category term="git" scheme="http://yoursite.com/categories/git/"/>
     
     
       <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
@@ -129,7 +127,7 @@ git commit -m &amp;quo
     <link href="http://yoursite.com/2019/01/03/%E6%B8%90%E5%8F%98%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%A4%84%E7%90%86/"/>
     <id>http://yoursite.com/2019/01/03/渐变与变形处理/</id>
     <published>2019-01-03T12:07:42.000Z</published>
-    <updated>2019-01-03T12:25:35.483Z</updated>
+    <updated>2019-01-06T12:54:19.170Z</updated>
     
     <summary type="html">
     
@@ -143,8 +141,6 @@ git commit -m &amp;quo
     
       <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
     
-      <category term="样式" scheme="http://yoursite.com/categories/CSS/%E6%A0%B7%E5%BC%8F/"/>
-    
     
       <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
     
@@ -157,7 +153,7 @@ git commit -m &amp;quo
     <link href="http://yoursite.com/2019/01/03/%E8%83%8C%E6%99%AF%E4%B8%8E%E8%BE%B9%E6%A1%86/"/>
     <id>http://yoursite.com/2019/01/03/背景与边框/</id>
     <published>2019-01-03T12:07:33.000Z</published>
-    <updated>2019-01-03T12:25:17.495Z</updated>
+    <updated>2019-01-06T12:54:10.717Z</updated>
     
     <summary type="html">
     
@@ -171,8 +167,6 @@ git commit -m &amp;quo
     
       <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
     
-      <category term="样式" scheme="http://yoursite.com/categories/CSS/%E6%A0%B7%E5%BC%8F/"/>
-    
     
       <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
     
@@ -185,7 +179,7 @@ git commit -m &amp;quo
     <link href="http://yoursite.com/2019/01/03/CSS%E5%8A%A8%E7%94%BB/"/>
     <id>http://yoursite.com/2019/01/03/CSS动画/</id>
     <published>2019-01-03T12:07:03.000Z</published>
-    <updated>2019-01-03T12:26:34.345Z</updated>
+    <updated>2019-01-06T12:53:26.423Z</updated>
     
     <summary type="html">
     
@@ -199,8 +193,6 @@ git commit -m &amp;quo
     
       <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
     
-      <category term="动画" scheme="http://yoursite.com/categories/CSS/%E5%8A%A8%E7%94%BB/"/>
-    
     
       <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
     
@@ -213,7 +205,7 @@ git commit -m &amp;quo
     <link href="http://yoursite.com/2019/01/03/CSS3%E6%A6%82%E8%BF%B0/"/>
     <id>http://yoursite.com/2019/01/03/CSS3概述/</id>
     <published>2019-01-03T12:06:53.000Z</published>
-    <updated>2019-01-03T12:23:53.054Z</updated>
+    <updated>2019-01-06T12:53:18.734Z</updated>
     
     <summary type="html">
     
@@ -228,8 +220,6 @@ git commit -m &amp;quo
     
       <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
     
-      <category term="概述" scheme="http://yoursite.com/categories/CSS/%E6%A6%82%E8%BF%B0/"/>
-    
     
       <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
     
@@ -240,7 +230,7 @@ git commit -m &amp;quo
     <link href="http://yoursite.com/2019/01/03/%E6%96%87%E6%9C%AC%E5%AD%97%E4%BD%93%E4%B8%8E%E9%A2%9C%E8%89%B2/"/>
     <id>http://yoursite.com/2019/01/03/文本字体与颜色/</id>
     <published>2019-01-03T12:05:00.000Z</published>
-    <updated>2019-01-03T12:25:46.886Z</updated>
+    <updated>2019-01-06T12:54:27.211Z</updated>
     
     <summary type="html">
     
@@ -254,8 +244,6 @@ git commit -m &amp;quo
     
       <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
     
-      <category term="样式" scheme="http://yoursite.com/categories/CSS/%E6%A0%B7%E5%BC%8F/"/>
-    
     
       <category term="CSS 样式" scheme="http://yoursite.com/tags/CSS-%E6%A0%B7%E5%BC%8F/"/>
     
@@ -266,7 +254,7 @@ git commit -m &amp;quo
     <link href="http://yoursite.com/2019/01/03/JavaScript-this%E7%9A%84%E5%9B%9B%E7%A7%8D%E7%BB%91%E5%AE%9A%E6%96%B9%E5%BC%8F/"/>
     <id>http://yoursite.com/2019/01/03/JavaScript-this的四种绑定方式/</id>
     <published>2019-01-03T11:15:06.000Z</published>
-    <updated>2019-01-03T12:27:04.204Z</updated>
+    <updated>2019-01-06T12:53:34.100Z</updated>
     
     <summary type="html">
     
@@ -278,8 +266,6 @@ git commit -m &amp;quo
     </summary>
     
       <category term="JavaScript" scheme="http://yoursite.com/categories/JavaScript/"/>
-    
-      <category term="函数" scheme="http://yoursite.com/categories/JavaScript/%E5%87%BD%E6%95%B0/"/>
     
     
       <category term="JS" scheme="http://yoursite.com/tags/JS/"/>
