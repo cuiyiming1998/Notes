@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cuiyiming1998.github.io/"/>
-  <updated>2019-01-06T13:41:40.272Z</updated>
+  <updated>2019-01-07T12:05:12.221Z</updated>
   <id>https://cuiyiming1998.github.io/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Angular 组件</title>
+    <link href="https://cuiyiming1998.github.io/2019/01/07/Angular-%E7%BB%84%E4%BB%B6/"/>
+    <id>https://cuiyiming1998.github.io/2019/01/07/Angular-组件/</id>
+    <published>2019-01-07T10:45:34.000Z</published>
+    <updated>2019-01-07T12:05:12.221Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;框架模式&quot;&gt;&lt;a href=&quot;#框架模式&quot; class=&quot;headerlink&quot; title=&quot;框架模式&quot;&gt;&lt;/a&gt;框架模式&lt;/h2&gt;&lt;h3 id=&quot;MVC&quot;&gt;&lt;a href=&quot;#MVC&quot; class=&quot;headerlink&quot; title=&quot;MVC&quot;&gt;&lt;/a&gt;MV
+      
+    
+    </summary>
+    
+      <category term="Angular" scheme="https://cuiyiming1998.github.io/categories/Angular/"/>
+    
+    
+      <category term="Angular" scheme="https://cuiyiming1998.github.io/tags/Angular/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Angular 环境搭建</title>
+    <link href="https://cuiyiming1998.github.io/2019/01/07/Angular-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>https://cuiyiming1998.github.io/2019/01/07/Angular-环境搭建/</id>
+    <published>2019-01-07T09:52:54.000Z</published>
+    <updated>2019-01-07T10:44:39.898Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Angular-介绍&quot;&gt;&lt;a href=&quot;#Angular-介绍&quot; class=&quot;headerlink&quot; title=&quot;Angular 介绍&quot;&gt;&lt;/a&gt;Angular 介绍&lt;/h2&gt;&lt;p&gt;创始人： Misko Hevery&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/20
+      
+    
+    </summary>
+    
+      <category term="Angular" scheme="https://cuiyiming1998.github.io/categories/Angular/"/>
+    
+    
+      <category term="Angular" scheme="https://cuiyiming1998.github.io/tags/Angular/"/>
+    
+      <category term="环境搭建" scheme="https://cuiyiming1998.github.io/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>Node.js Stream-流</title>

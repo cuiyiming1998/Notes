@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>Angular 环境搭建 | CYoung</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="CYoung">
+  
+  <meta name="description" content="Angular 介绍创始人： Misko Hevery  Angular是一个来自谷歌的开源的前端JavaScript框架，诞生于2019年。 2015年之前Angular 1.x广泛应用，开发单页面应用无人能敌。 2016年9月，Angular 2.0发布，颠覆之前的版本。 2017年3月，Angular4 发布。 2017年11月，Angular5 发布。 2018年5月，Angular6发布">
+<meta name="keywords" content="Angular,环境搭建">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Angular 环境搭建">
+<meta property="og:url" content="https://cuiyiming1998.github.io/2019/01/07/Angular-环境搭建/index.html">
+<meta property="og:site_name" content="CYoung">
+<meta property="og:description" content="Angular 介绍创始人： Misko Hevery  Angular是一个来自谷歌的开源的前端JavaScript框架，诞生于2019年。 2015年之前Angular 1.x广泛应用，开发单页面应用无人能敌。 2016年9月，Angular 2.0发布，颠覆之前的版本。 2017年3月，Angular4 发布。 2017年11月，Angular5 发布。 2018年5月，Angular6发布">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cuiyiming1998.github.io/2019/01/07/Angular-环境搭建/misko.png">
+<meta property="og:updated_time" content="2019-01-07T10:44:39.898Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Angular 环境搭建">
+<meta name="twitter:description" content="Angular 介绍创始人： Misko Hevery  Angular是一个来自谷歌的开源的前端JavaScript框架，诞生于2019年。 2015年之前Angular 1.x广泛应用，开发单页面应用无人能敌。 2016年9月，Angular 2.0发布，颠覆之前的版本。 2017年3月，Angular4 发布。 2017年11月，Angular5 发布。 2018年5月，Angular6发布">
+<meta name="twitter:image" content="https://cuiyiming1998.github.io/2019/01/07/Angular-环境搭建/misko.png">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+</html>
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">CYoung&#39;s Blog</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        CYoung&#39;s Blog
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        The day is today.
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="CYoung" target="_blank" href="//cuiyiming1998.github.io">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/cuiyiming1998">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/u/2931431005">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//www.baidu.com">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-Angular-环境搭建" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      Angular 环境搭建
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/Angular/">Angular</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2019-01-07
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <h2 id="Angular-介绍"><a href="#Angular-介绍" class="headerlink" title="Angular 介绍"></a>Angular 介绍</h2><p>创始人： Misko Hevery</p>
+<p><img src="/2019/01/07/Angular-环境搭建/misko.png" alt="Misko"></p>
+<p><code>Angular</code>是一个来自谷歌的开源的前端<code>JavaScript</code>框架，诞生于2019年。</p>
+<p>2015年之前<code>Angular 1.x</code>广泛应用，开发单页面应用无人能敌。</p>
+<p>2016年9月，<code>Angular 2.0</code>发布，颠覆之前的版本。</p>
+<p>2017年3月，<code>Angular4</code> 发布。</p>
+<p>2017年11月，<code>Angular5</code> 发布。</p>
+<p>2018年5月，<code>Angular6</code>发布 。</p>
+<p><code>Angular2.0</code> 以后基于 <code>TypeScript。</code></p>
+<h2 id="Angular核心特性"><a href="#Angular核心特性" class="headerlink" title="Angular核心特性"></a>Angular核心特性</h2><ul>
+<li>组件化：<code>Angular</code>的核心所在</li>
+<li>数据绑定</li>
+<li>服务</li>
+<li>依赖注入机制</li>
+<li>路由及路由嵌套</li>
+<li>指令系统</li>
+</ul>
+<h2 id="Cordova"><a href="#Cordova" class="headerlink" title="Cordova"></a>Cordova</h2><ul>
+<li><code>Cordova</code>是一个开源的移动开发框架<ul>
+<li>允许使用标准的Web技术<code>HTML5</code>，<code>CSS3</code>和<code>JavaScript</code>进行跨平台开发</li>
+<li>插件是<code>Cordova</code>框架的重要组成部分，他提供了<code>Cordova</code>和原生组件互相通信的API，能过通过<code>JavaScript</code>调用原生功能</li>
+</ul>
+</li>
+</ul>
+<h2 id="Angular-环境搭建"><a href="#Angular-环境搭建" class="headerlink" title="Angular 环境搭建"></a>Angular 环境搭建</h2><ol>
+<li><p>安装最新版<code>Node</code></p>
+</li>
+<li><p>全局安装<code>Angular CLI</code>脚手架工具</p>
+<ul>
+<li><p>是一个命令行界面工具，可以创建项、添加文件以及执行其他任务，如测试、打包和发布。</p>
+</li>
+<li><p>命令： </p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">npm install <span class="token operator">-</span>g @angular<span class="token operator">/</span>cli
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>只需安装一次</p>
+</li>
+<li><p>可安装淘宝镜像</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">npm install <span class="token operator">-</span>g cnpm <span class="token operator">--</span>registry<span class="token operator">=</span>https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>registry<span class="token punctuation">.</span>npm<span class="token punctuation">.</span>taobao<span class="token punctuation">.</span>org
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+</ul>
+</li>
+<li><p>项目启动</p>
+<ul>
+<li><p>创建项目</p>
+<ul>
+<li><p>命令：</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">ng <span class="token keyword">new</span> 项目名称
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+</ul>
+</li>
+<li><p>进入项目</p>
+<ul>
+<li><p>命令</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">cd 项目名称
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+</ul>
+</li>
+<li><p>启动服务器</p>
+<ul>
+<li><p>命令</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">ng serve <span class="token operator">--</span>open
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><code>ng serve</code>命令会启动开发服务器</p>
+</li>
+<li><p><code>--open</code>可以自动打开浏览器并访问<code>http://localhost:4200</code></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="项目文件概览"><a href="#项目文件概览" class="headerlink" title="项目文件概览"></a>项目文件概览</h2><h3 id="src文件夹"><a href="#src文件夹" class="headerlink" title="src文件夹"></a><code>src</code>文件夹</h3><p>包含所有的<code>Angular</code>组件、模板、样式图片以及应用所需的任何东西，这个文件夹之外的文件都是为构建应用提供支持用的。</p>
+<h4 id="app-app-component-ts-html-css-spec-ts"><a href="#app-app-component-ts-html-css-spec-ts" class="headerlink" title="app/app.component.{ ts,html,css,spec.ts}"></a><code>app/app.component.{ ts,html,css,spec.ts}</code></h4><p>使用<code>HTML</code>模板、<code>CSS</code>样式和单元测试定义<code>AppComponent</code>组件。它是跟组件，随着应用的扩展它会成为一颗组件树的根节点。</p>
+<h4 id="app-app-module-ts"><a href="#app-app-module-ts" class="headerlink" title="app/app.module.ts"></a><code>app/app.module.ts</code></h4><p>定义<code>AppModule</code>，根模块为<code>Angular</code>描述如何组装应用。</p>
+<h4 id="main-ts"><a href="#main-ts" class="headerlink" title="main.ts"></a><code>main.ts</code></h4><p>应用的主要入口，使用<code>JIT</code> 编译器编译本应用，并启动应用的根模块<code>AppModule</code>，使其运行在浏览器中。</p>
+<h4 id="style-css"><a href="#style-css" class="headerlink" title="style.css"></a><code>style.css</code></h4><p>全局样式，大多数情况下，会在组件中使用局部样式，以利于维护，而那些影响整个应用的样式需集中存放在这里。</p>
+<h4 id="browserslist、karma-conf-js、polyfills-ts、tslint-json、tsconfig-app-spec-json"><a href="#browserslist、karma-conf-js、polyfills-ts、tslint-json、tsconfig-app-spec-json" class="headerlink" title="browserslist、karma.conf.js、polyfills.ts、tslint.json、tsconfig.{app|spec}.json"></a><code>browserslist、karma.conf.js、polyfills.ts、tslint.json、tsconfig.{app|spec}.json</code></h4><p>程序配置文件。</p>
+<h3 id="根目录"><a href="#根目录" class="headerlink" title="根目录"></a>根目录</h3><h4 id="e2e"><a href="#e2e" class="headerlink" title="e2e/"></a><code>e2e/</code></h4><p>端到端（end-to-end）测试</p>
+<h4 id="node-modules"><a href="#node-modules" class="headerlink" title="node_modules/"></a><code>node_modules/</code></h4><p><code>Node.js</code>创建了这个文件夹，并把<code>package.json</code>中列举的所有第三方模块都放在其中。</p>
+<h4 id="angular-json"><a href="#angular-json" class="headerlink" title="angular.json"></a><code>angular.json</code></h4><p><code>Angular CLI</code>的配置文件。</p>
+<p><code>package.json</code></p>
+<p>npm配置文件，其中列出了项目使用到的第三方依赖包。</p>
+<h4 id="gitignore、-editorconfig-、README-md、tslint-json、tsconfig-json、protractor-conf-js"><a href="#gitignore、-editorconfig-、README-md、tslint-json、tsconfig-json、protractor-conf-js" class="headerlink" title=".gitignore、 .editorconfig 、README.md、tslint.json、tsconfig.json、protractor.conf.js"></a><code>.gitignore、 .editorconfig 、README.md、tslint.json、tsconfig.json、protractor.conf.js</code></h4><p>编辑器，Git等的配置文件。</p>
+<h2 id="项目启动过程"><a href="#项目启动过程" class="headerlink" title="项目启动过程"></a>项目启动过程</h2><ul>
+<li><code>angular.json</code>  定义了应用程序启动时加载的 HTML 页面（index.html ）和 脚本文件 （ main.ts ）</li>
+<li><code>main.ts</code> 中定义了程序启动的模块（ APPModule ）</li>
+<li><code>app.module.ts</code>中定义了程序启动的组件（ AppComponent ）</li>
+<li><code>app.component.ts</code>中定义了组件的模板及使用组件时的选择器名称（ app-root ）</li>
+<li>程序将在 <code>index.html</code> 中检索<code>&lt;app-root&gt;</code>，将其替换成组件中的内容</li>
+</ul>
+<h2 id="模板语法"><a href="#模板语法" class="headerlink" title="模板语法"></a>模板语法</h2><h3 id="插值表达式"><a href="#插值表达式" class="headerlink" title="插值表达式"></a>插值表达式</h3><pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>
+    {{ title }}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>可以把计算后的字符串插入到HTML标签内或对标签的属性进行赋值。</p>
+<h3 id="属性绑定"><a href="#属性绑定" class="headerlink" title="属性绑定"></a>属性绑定</h3><pre class="line-numbers language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- [属性名] = "" --></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">[src]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>imgUrl<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="事件绑定"><a href="#事件绑定" class="headerlink" title="事件绑定"></a>事件绑定</h3><pre class="line-numbers language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- (事件名) = "eventFun()" --></span>
+
+&lt;button (click) = "clickFun()"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="双向数据绑定-–-ngModel"><a href="#双向数据绑定-–-ngModel" class="headerlink" title="双向数据绑定 – [(ngModel)]"></a>双向数据绑定 – <code>[(ngModel)]</code></h3><p>数据通过属性绑定从组件传到输入框，用户的修改通过事件绑定传回组件，把属性值设置为最新的值。</p>
+<p>注意引入： <code>FormsModule</code></p>
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> FormsModule <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/forms'</span><span class="token punctuation">;</span>
+imports<span class="token punctuation">:</span> <span class="token punctuation">[</span> BrowserModule<span class="token punctuation">,</span> FormsModule<span class="token punctuation">]</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2019年01月07日 18:44</p>
+        <p>原始链接： <a class="post-url" href="/2019/01/07/Angular-环境搭建/" title="Angular 环境搭建">https://cuiyiming1998.github.io/2019/01/07/Angular-环境搭建/</a></p>
+        <footer>
+            <a href="https://cuiyiming1998.github.io">
+                <img src="/images/logo.png" alt="C. Young">
+                C. Young
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://cuiyiming1998.github.io/2019/01/07/Angular-环境搭建/&title=《Angular 环境搭建》 — CYoung&pic=images/angular.jpg" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://cuiyiming1998.github.io/2019/01/07/Angular-环境搭建/&title=《Angular 环境搭建》 — CYoung&source=The day is Tody." data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://cuiyiming1998.github.io/2019/01/07/Angular-环境搭建/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Angular 环境搭建》 — CYoung&url=https://cuiyiming1998.github.io/2019/01/07/Angular-环境搭建/&via=https://cuiyiming1998.github.io" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://cuiyiming1998.github.io/2019/01/07/Angular-环境搭建/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://cuiyiming1998.github.io/2019/01/07/Angular-环境搭建/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/Angular/" class="color3">Angular</a>
+      
+    <a href="/tags/环境搭建/" class="color5">环境搭建</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Angular-介绍"><span class="post-toc-text">Angular 介绍</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Angular核心特性"><span class="post-toc-text">Angular核心特性</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Cordova"><span class="post-toc-text">Cordova</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Angular-环境搭建"><span class="post-toc-text">Angular 环境搭建</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#项目文件概览"><span class="post-toc-text">项目文件概览</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#src文件夹"><span class="post-toc-text">src文件夹</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#app-app-component-ts-html-css-spec-ts"><span class="post-toc-text">app/app.component.{ ts,html,css,spec.ts}</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#app-app-module-ts"><span class="post-toc-text">app/app.module.ts</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#main-ts"><span class="post-toc-text">main.ts</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#style-css"><span class="post-toc-text">style.css</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#browserslist、karma-conf-js、polyfills-ts、tslint-json、tsconfig-app-spec-json"><span class="post-toc-text">browserslist、karma.conf.js、polyfills.ts、tslint.json、tsconfig.{app|spec}.json</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#根目录"><span class="post-toc-text">根目录</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#e2e"><span class="post-toc-text">e2e/</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#node-modules"><span class="post-toc-text">node_modules/</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#angular-json"><span class="post-toc-text">angular.json</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#gitignore、-editorconfig-、README-md、tslint-json、tsconfig-json、protractor-conf-js"><span class="post-toc-text">.gitignore、 .editorconfig 、README.md、tslint.json、tsconfig.json、protractor.conf.js</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#项目启动过程"><span class="post-toc-text">项目启动过程</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#模板语法"><span class="post-toc-text">模板语法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#插值表达式"><span class="post-toc-text">插值表达式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#属性绑定"><span class="post-toc-text">属性绑定</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#事件绑定"><span class="post-toc-text">事件绑定</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#双向数据绑定-–-ngModel"><span class="post-toc-text">双向数据绑定 – [(ngModel)]</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+    <a href="/2019/01/07/Angular-组件/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          Angular 组件
+        
+      </span>
+    </a>
+  
+  
+    <a href="/2019/01/06/Node-js-Stream-流/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">Node.js Stream-流</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2019 C. Young<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "https://cuiyiming1998.github.io",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 0
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <a class="category-link" href="/categories/Angular/">Angular</a><a class="category-link" href="/categories/CSS/">CSS</a><a class="category-link" href="/categories/JavaScript/">JavaScript</a><a class="category-link" href="/categories/Linux/">Linux</a><a class="category-link" href="/categories/Linux/Ionic/">Ionic</a><a class="category-link" href="/categories/Node-js/">Node.js</a><a class="category-link" href="/categories/git/">git</a>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/Angular/" style="font-size: 15px;">Angular</a> <a href="/tags/CSS/" style="font-size: 20px;">CSS</a> <a href="/tags/CSS-样式/" style="font-size: 10px;">CSS 样式</a> <a href="/tags/JS/" style="font-size: 10px;">JS</a> <a href="/tags/Node-js/" style="font-size: 15px;">Node.js</a> <a href="/tags/ionic/" style="font-size: 10px;">ionic</a> <a href="/tags/linux/" style="font-size: 15px;">linux</a> <a href="/tags/函数/" style="font-size: 10px;">函数</a> <a href="/tags/动画/" style="font-size: 10px;">动画</a> <a href="/tags/样式/" style="font-size: 15px;">样式</a> <a href="/tags/环境搭建/" style="font-size: 10px;">环境搭建</a> <a href="/tags/配置/" style="font-size: 10px;">配置</a> <a href="/tags/错误/" style="font-size: 10px;">错误</a> <a href="/tags/错误解决/" style="font-size: 10px;">错误解决</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a href="/">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            <a href="/tags/Angular/" style="font-size: 15px;">Angular</a> <a href="/tags/CSS/" style="font-size: 20px;">CSS</a> <a href="/tags/CSS-样式/" style="font-size: 10px;">CSS 样式</a> <a href="/tags/JS/" style="font-size: 10px;">JS</a> <a href="/tags/Node-js/" style="font-size: 15px;">Node.js</a> <a href="/tags/ionic/" style="font-size: 10px;">ionic</a> <a href="/tags/linux/" style="font-size: 15px;">linux</a> <a href="/tags/函数/" style="font-size: 10px;">函数</a> <a href="/tags/动画/" style="font-size: 10px;">动画</a> <a href="/tags/样式/" style="font-size: 15px;">样式</a> <a href="/tags/环境搭建/" style="font-size: 10px;">环境搭建</a> <a href="/tags/配置/" style="font-size: 10px;">配置</a> <a href="/tags/错误/" style="font-size: 10px;">错误</a> <a href="/tags/错误解决/" style="font-size: 10px;">错误解决</a>
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>Angular 组件 | CYoung</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="CYoung">
+  
+  <meta name="description" content="框架模式MVC Model(模型)、View(视图)、Controller(控制器) MVP Model(模型)、View(视图)、Presenter(呈现) MVVM Model(模型)、View(视图)、View-Model(视图-模型) 组件组件负责控制屏幕的某一块区域，即视图。 组件是Angular的核心理念，模块化机制是为组件化服务的。 创建组件命令： ng g component co">
+<meta name="keywords" content="Angular">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Angular 组件">
+<meta property="og:url" content="https://cuiyiming1998.github.io/2019/01/07/Angular-组件/index.html">
+<meta property="og:site_name" content="CYoung">
+<meta property="og:description" content="框架模式MVC Model(模型)、View(视图)、Controller(控制器) MVP Model(模型)、View(视图)、Presenter(呈现) MVVM Model(模型)、View(视图)、View-Model(视图-模型) 组件组件负责控制屏幕的某一块区域，即视图。 组件是Angular的核心理念，模块化机制是为组件化服务的。 创建组件命令： ng g component co">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cuiyiming1998.github.io/2019/01/07/Angular-组件/MVC.png">
+<meta property="og:image" content="https://cuiyiming1998.github.io/2019/01/07/Angular-组件/MVP.png">
+<meta property="og:image" content="https://cuiyiming1998.github.io/2019/01/07/Angular-组件/MVVM.png">
+<meta property="og:image" content="https://cuiyiming1998.github.io/2019/01/07/Angular-组件/components.png">
+<meta property="og:updated_time" content="2019-01-07T12:05:12.221Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Angular 组件">
+<meta name="twitter:description" content="框架模式MVC Model(模型)、View(视图)、Controller(控制器) MVP Model(模型)、View(视图)、Presenter(呈现) MVVM Model(模型)、View(视图)、View-Model(视图-模型) 组件组件负责控制屏幕的某一块区域，即视图。 组件是Angular的核心理念，模块化机制是为组件化服务的。 创建组件命令： ng g component co">
+<meta name="twitter:image" content="https://cuiyiming1998.github.io/2019/01/07/Angular-组件/MVC.png">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+</html>
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">CYoung&#39;s Blog</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        CYoung&#39;s Blog
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        The day is today.
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="CYoung" target="_blank" href="//cuiyiming1998.github.io">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/cuiyiming1998">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/u/2931431005">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//www.baidu.com">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-Angular-组件" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      Angular 组件
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/Angular/">Angular</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2019-01-07
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <h2 id="框架模式"><a href="#框架模式" class="headerlink" title="框架模式"></a>框架模式</h2><h3 id="MVC"><a href="#MVC" class="headerlink" title="MVC"></a>MVC</h3><p><img src="/2019/01/07/Angular-组件/MVC.png" alt="MVC"></p>
+<p>Model(模型)、View(视图)、Controller(控制器)</p>
+<h3 id="MVP"><a href="#MVP" class="headerlink" title="MVP"></a>MVP</h3><p><img src="/2019/01/07/Angular-组件/MVP.png" alt="MVP"></p>
+<p>Model(模型)、View(视图)、Presenter(呈现)</p>
+<h3 id="MVVM"><a href="#MVVM" class="headerlink" title="MVVM"></a>MVVM</h3><p><img src="/2019/01/07/Angular-组件/MVVM.png" alt="MVVM"></p>
+<p>Model(模型)、View(视图)、View-Model(视图-模型)</p>
+<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><p>组件负责控制屏幕的某一块区域，即视图。</p>
+<p>组件是<code>Angular</code>的核心理念，模块化机制是为组件化服务的。</p>
+<h3 id="创建组件"><a href="#创建组件" class="headerlink" title="创建组件"></a>创建组件</h3><p>命令：</p>
+<pre><code>ng g component components/componentName
+</code></pre><p>在<code>AppModule</code>中声明组件：</p>
+<ul>
+<li><p>引入：</p>
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> ComponentName <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./components/...'</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>声明： 在<code>declarations</code>数组中声明</p>
+</li>
+</ul>
+<p><strong>如果通过命令创建组件，Angular会自动添加声明。</strong></p>
+<h3 id="使用组件"><a href="#使用组件" class="headerlink" title="使用组件"></a>使用组件</h3><pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>app-组件名</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>app-组件名</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="组件的基础组成"><a href="#组件的基础组成" class="headerlink" title="组件的基础组成"></a>组件的基础组成</h3><h4 id="组件装饰器-–-component"><a href="#组件装饰器-–-component" class="headerlink" title="组件装饰器 – @component()"></a>组件装饰器 – <code>@component()</code></h4><p>每个组件类必须用<code>@component</code>修饰才能成为Angular组件。</p>
+<h4 id="组件元数据"><a href="#组件元数据" class="headerlink" title="组件元数据"></a>组件元数据</h4><h4 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h4><p>每个组件只能关联一个模板，这个模板会渲染到页面上。</p>
+<h4 id="组件类"><a href="#组件类" class="headerlink" title="组件类"></a>组件类</h4><p>定义组件的逻辑。</p>
+<h2 id="组件交互"><a href="#组件交互" class="headerlink" title="组件交互"></a>组件交互</h2><p><img src="/2019/01/07/Angular-组件/components.png" alt="组件交互"></p>
+<h3 id="组件交互（父组件到子组件）–-Input"><a href="#组件交互（父组件到子组件）–-Input" class="headerlink" title="组件交互（父组件到子组件）– @Input"></a>组件交互（父组件到子组件）– <code>@Input</code></h3><p>子组件引入 <code>Input</code></p>
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Input <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>声明属性</p>
+<pre class="line-numbers language-typescript"><code class="language-typescript">@<span class="token function">Input</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 属性名
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>绑定属性</p>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>app-组件名</span> <span class="token attr-name">[属性名]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>属性值<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>app-组件名</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="组件交互（子组件到父组件）-–-Output"><a href="#组件交互（子组件到父组件）-–-Output" class="headerlink" title="组件交互（子组件到父组件） – @Output"></a>组件交互（子组件到父组件） – <code>@Output</code></h3><p>子组件引入<code>EventEmitter</code>,<code>Output</code></p>
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Component<span class="token punctuation">,</span> EventEmitter<span class="token punctuation">,</span> Output<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@angular/core'</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>子组件暴露<code>EventEmitter</code>属性，并用<code>@Output</code>装饰</p>
+<pre class="line-numbers language-typescript"><code class="language-typescript">@<span class="token function">Output</span><span class="token punctuation">(</span><span class="token punctuation">)</span> eventName <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">EventEmitter</span><span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>通过<code>EventEmitter</code>的<code>emit</code>方法传递数据</p>
+<pre class="line-numbers language-type"><code class="language-type">this.ecentName.emit(data);
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>父组件绑定事件，通过事件对象<code>($event)</code>接收数据</p>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>app-组件名</span> <span class="token attr-name">(eventName)</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>fun($event)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>app-组件名</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h2><h3 id="生命周期-1"><a href="#生命周期-1" class="headerlink" title="生命周期"></a>生命周期</h3><p>Angular每个组件都存在一个生命周期，从创建，变更到销毁。</p>
+<h3 id="生命周期钩子（lifecycle-hook）"><a href="#生命周期钩子（lifecycle-hook）" class="headerlink" title="生命周期钩子（lifecycle hook）"></a>生命周期钩子（lifecycle hook）</h3><p>Angular提供组件生命周期钩子，把这些关键时刻暴露出来，赋予在这些关键时刻和组件进行交互的能力。</p>
+<p><code>Angular core</code>库里定义了<strong>生命周期钩子</strong>接口。</p>
+<p>每个接口都有唯一的一个钩子方法。</p>
+<p><code>ngOnChanges()</code></p>
+<p>检测到组件输入属性发生变化时调用。</p>
+<p><code>ngOnInit()</code></p>
+<p>在构造函数之后马上执行复杂的初始化逻辑。</p>
+<p>在Angular设置完输入属性后，对该组件进行准备。</p>
+<p>只调用一次</p>
+<p><code>ngDoCheck()</code></p>
+<p>检测被Angular忽略的更改。</p>
+<p><code>ngAfterContentInit()</code></p>
+<p>在投影（映射）内容初始化后调用，只调用一次。</p>
+<p><code>ngAfterContentChecked()</code></p>
+<p>在投影（映射）内容变更检测之后调用。</p>
+<p><code>ngAfterViewInit()</code></p>
+<p>在Angular完全初始化了组件的视图后调用。</p>
+<p><code>ngAfterViewChecked()</code></p>
+<p>在默认的变更检测器完成了对组件视图的变更检测之后调用。</p>
+<p><code>ngOnDestory()</code></p>
+<p>执行组件注销时的清理工作。</p>
+<h3 id="ng-content内容映射"><a href="#ng-content内容映射" class="headerlink" title="ng-content内容映射"></a><code>ng-content</code>内容映射</h3><p>在组件中嵌入模板代码的<strong>占位符</strong>，告诉angular在何处插入模板代码。</p>
+<p>方便定制可复用的组件。</p>
+<p>当有多个映射时，模板代码取类名进行区分，<code>ng-content</code>通过<code>select</code>属性进行绑定。</p>
+<p>父组件：</p>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>app-component</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>header<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        ...
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>app-component</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>子组件：</p>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ng-content</span> <span class="token attr-name">select</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>.header<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ng-content</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2019年01月07日 20:05</p>
+        <p>原始链接： <a class="post-url" href="/2019/01/07/Angular-组件/" title="Angular 组件">https://cuiyiming1998.github.io/2019/01/07/Angular-组件/</a></p>
+        <footer>
+            <a href="https://cuiyiming1998.github.io">
+                <img src="/images/logo.png" alt="C. Young">
+                C. Young
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://cuiyiming1998.github.io/2019/01/07/Angular-组件/&title=《Angular 组件》 — CYoung&pic=images/angular.jpg" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://cuiyiming1998.github.io/2019/01/07/Angular-组件/&title=《Angular 组件》 — CYoung&source=The day is Tody." data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://cuiyiming1998.github.io/2019/01/07/Angular-组件/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Angular 组件》 — CYoung&url=https://cuiyiming1998.github.io/2019/01/07/Angular-组件/&via=https://cuiyiming1998.github.io" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://cuiyiming1998.github.io/2019/01/07/Angular-组件/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://cuiyiming1998.github.io/2019/01/07/Angular-组件/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/Angular/" class="color3">Angular</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#框架模式"><span class="post-toc-text">框架模式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#MVC"><span class="post-toc-text">MVC</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#MVP"><span class="post-toc-text">MVP</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#MVVM"><span class="post-toc-text">MVVM</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#组件"><span class="post-toc-text">组件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#创建组件"><span class="post-toc-text">创建组件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#使用组件"><span class="post-toc-text">使用组件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#组件的基础组成"><span class="post-toc-text">组件的基础组成</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#组件装饰器-–-component"><span class="post-toc-text">组件装饰器 – @component()</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#组件元数据"><span class="post-toc-text">组件元数据</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#模板"><span class="post-toc-text">模板</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#组件类"><span class="post-toc-text">组件类</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#组件交互"><span class="post-toc-text">组件交互</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#组件交互（父组件到子组件）–-Input"><span class="post-toc-text">组件交互（父组件到子组件）– @Input</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#组件交互（子组件到父组件）-–-Output"><span class="post-toc-text">组件交互（子组件到父组件） – @Output</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#生命周期"><span class="post-toc-text">生命周期</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#生命周期-1"><span class="post-toc-text">生命周期</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#生命周期钩子（lifecycle-hook）"><span class="post-toc-text">生命周期钩子（lifecycle hook）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#ng-content内容映射"><span class="post-toc-text">ng-content内容映射</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+  
+    <a href="/2019/01/07/Angular-环境搭建/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">Angular 环境搭建</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2019 C. Young<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "https://cuiyiming1998.github.io",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 0
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <a class="category-link" href="/categories/Angular/">Angular</a><a class="category-link" href="/categories/CSS/">CSS</a><a class="category-link" href="/categories/JavaScript/">JavaScript</a><a class="category-link" href="/categories/Linux/">Linux</a><a class="category-link" href="/categories/Linux/Ionic/">Ionic</a><a class="category-link" href="/categories/Node-js/">Node.js</a><a class="category-link" href="/categories/git/">git</a>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/Angular/" style="font-size: 15px;">Angular</a> <a href="/tags/CSS/" style="font-size: 20px;">CSS</a> <a href="/tags/CSS-样式/" style="font-size: 10px;">CSS 样式</a> <a href="/tags/JS/" style="font-size: 10px;">JS</a> <a href="/tags/Node-js/" style="font-size: 15px;">Node.js</a> <a href="/tags/ionic/" style="font-size: 10px;">ionic</a> <a href="/tags/linux/" style="font-size: 15px;">linux</a> <a href="/tags/函数/" style="font-size: 10px;">函数</a> <a href="/tags/动画/" style="font-size: 10px;">动画</a> <a href="/tags/样式/" style="font-size: 15px;">样式</a> <a href="/tags/环境搭建/" style="font-size: 10px;">环境搭建</a> <a href="/tags/配置/" style="font-size: 10px;">配置</a> <a href="/tags/错误/" style="font-size: 10px;">错误</a> <a href="/tags/错误解决/" style="font-size: 10px;">错误解决</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a href="/">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            <a href="/tags/Angular/" style="font-size: 15px;">Angular</a> <a href="/tags/CSS/" style="font-size: 20px;">CSS</a> <a href="/tags/CSS-样式/" style="font-size: 10px;">CSS 样式</a> <a href="/tags/JS/" style="font-size: 10px;">JS</a> <a href="/tags/Node-js/" style="font-size: 15px;">Node.js</a> <a href="/tags/ionic/" style="font-size: 10px;">ionic</a> <a href="/tags/linux/" style="font-size: 15px;">linux</a> <a href="/tags/函数/" style="font-size: 10px;">函数</a> <a href="/tags/动画/" style="font-size: 10px;">动画</a> <a href="/tags/样式/" style="font-size: 15px;">样式</a> <a href="/tags/环境搭建/" style="font-size: 10px;">环境搭建</a> <a href="/tags/配置/" style="font-size: 10px;">配置</a> <a href="/tags/错误/" style="font-size: 10px;">错误</a> <a href="/tags/错误解决/" style="font-size: 10px;">错误解决</a>
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+</html>
